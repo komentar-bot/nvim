@@ -13,12 +13,16 @@ return require('packer').startup(function()
 	})
 	use("nvim-telescope/telescope-file-browser.nvim")
 
---	use({
---        "nvim-treesitter/nvim-treesitter",
---        config = function()
---			require("core.treesitters")
---		end,
---    }) -- Treesitter Syntax Highlighting
+	use({
+        "nvim-treesitter/nvim-treesitter",
+        run = function()
+            local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+            ts_update()
+        end,
+        config = function()
+		require("core.treesitters")
+		end,
+    }) -- Treesitter Syntax Highlighting
 
 	-- Completion
     use({
@@ -56,11 +60,11 @@ return require('packer').startup(function()
 	-- File management --
     use({
         "nvim-tree/nvim-tree.lua",
+		requires = { { "nvim-tree/nvim-web-devicons" } },
         config = function()
 			require("core.trees")
 		end,
 })
-	use("ryanoasis/vim-devicons")
 
 	-- Tim Pope Plugins --
 	use("tpope/vim-surround")

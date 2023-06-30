@@ -1,6 +1,5 @@
-require("core.plugins") -- uncomment this only at first to install packer
+require("core.plugins")
 require("core.options")
 require("core.keymaps")
-
--- require("core/autocmds")
+require("core/autocmds")
 

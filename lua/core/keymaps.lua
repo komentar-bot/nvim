@@ -11,13 +11,6 @@ map("i", "<C-A>", "<ESC>I")
 -- Load recent sessions
 map("n", "<leader>sl", "<CMD>SessionLoad<CR>")
 
--- Keybindings for telescope
-map("n", "<leader>fr", "<CMD>Telescope oldfiles<CR>")
-map("n", "<leader>ff", "<CMD>Telescope find_files<CR>")
-map("n", "<leader>fb", "<CMD>Telescope file_browser<CR>")
-map("n", "<leader>fw", "<CMD>Telescope live_grep<CR>")
-map("n", "<leader>ht", "<CMD>Telescope colorscheme<CR>")
-
 -- maps for go down and up 
 map("n", "j", "gj")
 map("n", "k", "gk")
@@ -38,6 +31,17 @@ map("n", "<c-b>", ":ls<CR>:b<Space>", opts )
 map("n", "<leader>h", ":bprevious<CR>", opts )
 map("n", "<leader>l", ":bnext<CR>", opts )
 
+---------------------------------------------
+-- PLUGIN KEYBINDING
+---------------------------------------------
+
+--  telescope
+map("n", "<leader>fr", "<CMD>Telescope oldfiles<CR>")
+map("n", "<leader>ff", "<CMD>Telescope find_files<CR>")
+map("n", "<leader>fb", "<CMD>Telescope file_browser<CR>")
+map("n", "<leader>fw", "<CMD>Telescope live_grep<CR>")
+map("n", "<leader>ht", "<CMD>Telescope colorscheme<CR>")
+
+
 -- nvim-tree
 map("n", "<leader>e", require("nvim-tree.api").tree.toggle)
-
