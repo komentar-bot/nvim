@@ -4,10 +4,10 @@
 3. cd to nvim configration folder `nc`.
 
 # Nvim Installation
-1. Packer `git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"`. Disconnect config related to plugin before installation `comment every line but plugin.lua in init.lua`
+1. Packer `git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"`. Before installation, disconnect all config related to plugin  `comment every line but plugin.lua in init.lua`
 4. Ripgrep `scoop install ripgrep`, required for nvim-tree.
 5. fd `scoop install fd` required for nvim-tree.
-6. zig `scoop install zig` required for nvim-treesitter. 
+6. zig `scoop install zig` required for nvim-treesitter. `:TSInstallInfo` available language, `:TSUpdate` update parsers unconditionally.
 
 
 PS. Check your nvim config `:checkhealth`
