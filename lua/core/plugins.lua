@@ -68,4 +68,7 @@ return require('packer').startup(function()
 
 	-- Tim Pope Plugins --
 	use("tpope/vim-surround")
+
+    -- Colorscheme --
+	use("folke/tokyonight.nvim")
 end)

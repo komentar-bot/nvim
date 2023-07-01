@@ -45,3 +45,6 @@ map("n", "<leader>ht", "<CMD>Telescope colorscheme<CR>")
 
 -- nvim-tree
 map("n", "<leader>e", require("nvim-tree.api").tree.toggle)
+
+-- nvim-cmp
+map("n", "<leader>ua", "<cmd>lua vim.g.cmptoggle = not vim.g.cmptoggle<CR>", { desc = "toggle nvim-cmp" })
