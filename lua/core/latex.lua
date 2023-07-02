@@ -14,7 +14,4 @@ vim.g.vimtex_compiler_latexmk = {
     },
 }
 
--- configuration is used by default on Windows if SumatraPDF is detected as executable.
---vim.g.vimtex_view_method = 'SumatraPDF'
---vim.g.vimtex_view_general_options = "-forward-search @tex @line @pdf"
 
