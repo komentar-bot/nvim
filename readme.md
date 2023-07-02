@@ -8,7 +8,9 @@
 4. Ripgrep `scoop install ripgrep`, required for nvim-tree.
 5. fd `scoop install fd` required for nvim-tree.
 6. zig `scoop install zig` required for nvim-treesitter. `:TSInstallInfo` available language, `:TSUpdate` update parsers unconditionally.
-
+7. Miktek, latex distribution [link](https://miktex.org/download). Net Installer for full package installation. Check update on miktex console after installation.
+8. Strawberry Perl [link](https://strawberryperl.com/).
+9. SumatraPDF, enable all the options on options menu.
 
 PS. Check your nvim config `:checkhealth`
 

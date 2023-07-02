@@ -1,12 +1,11 @@
+-- change defaul compiler engine
+g.vimtex_compiler_latexmk_engines = {
+    _ = '-lualatex'
+}
 
-vim.g.tex_flavor = 'latex'
-vim.g.vimtex_compiler_method = "latexmk"
-vim.g.vimtex_compiler_latexmk = {
-    callback = 1,
-    continuous = 1,
-    executable = "latexmk",
+g.vimtex_compiler_method = "latexmk"
+g.vimtex_compiler_latexmk = {
     options = {
-        "-lualatex",
         "-shell-escape",
         "-verbose",
         "-file-line-error",
@@ -14,8 +13,11 @@ vim.g.vimtex_compiler_latexmk = {
         "-interaction=nonstopmode",
     },
 }
--- Disable imaps (using Ultisnips)
-vim.g.vimtex_imaps_enabled = 0
+
+g.vimtex_view_method = 'sumatraPDF'
+
+
+
 -- Do not open pdfviwer on compile
 vim.g.vimtex_view_automatic = 0 -- Disable conceal
 vim.g.vimtex_syntax_conceal = {
@@ -33,13 +35,6 @@ vim.g.vimtex_syntax_conceal = {
 }
 -- Disable quickfix auto open
 vim.g.vimtex_quickfix_ignore_mode = 0
-vim.g.vimtex_compiler_progname = "nvr"
--- PDF viewer settings
-vim.g.latex_view_general_viewer = 'zathura'
-vim.g.vimtex_view_method = 'zathura'
-vim.g.vimtex_view_general_options = "-reuse-instance -forward-search @tex @line @pdf"
--- Do not auto open quickfix on compile erros
-vim.g.vimtex_quickfix_mode = 0
 -- Latex warnings to ignore
 vim.g.vimtex_quickfix_ignore_filters = {
     "Command terminated with space",

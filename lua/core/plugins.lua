@@ -71,4 +71,13 @@ return require('packer').startup(function()
 
     -- Colorscheme --
 	use("folke/tokyonight.nvim")
+
+    -- Research
+    use({
+        "lervag/vimtex",
+        config = function()
+			require("core.vimtex")
+		end,
+    })
+
 end)
