@@ -20,7 +20,7 @@ return require('packer').startup(function()
             ts_update()
         end,
         config = function()
-		require("core.treesitters")
+		require("core.treesitter")
 		end,
     }) -- Treesitter Syntax Highlighting
 
@@ -41,7 +41,7 @@ return require('packer').startup(function()
     use({
         "L3MON4D3/LuaSnip",
         config = function()
-			require("core.luasnips")
+			require("core.luasnip")
 		end,
     })
     use("rafamadriz/friendly-snippets")
@@ -53,7 +53,7 @@ return require('packer').startup(function()
 	use({
         "nvim-lualine/lualine.nvim",
         config = function()
-			require("core.statuslines")
+			require("core.statusline")
 		end,
     }) -- A better statusline
 
@@ -62,7 +62,7 @@ return require('packer').startup(function()
         "nvim-tree/nvim-tree.lua",
 		requires = { { "nvim-tree/nvim-web-devicons" } },
         config = function()
-			require("core.trees")
+			require("core.tree")
 		end,
 })
 
@@ -73,11 +73,6 @@ return require('packer').startup(function()
 	use("folke/tokyonight.nvim")
 
     -- Research
-    use({
-        "lervag/vimtex",
-        config = function()
-			require("core.vimtex")
-		end,
-    })
+	use("lervag/vimtex")
 
 end)
