@@ -66,12 +66,24 @@ local plugins = {
     },
     {
     "nvim-neorg/neorg",
-    ft = "norg",
-    opts = {
-      load = {
-        ["core.defaults"] = {},
-      },
-    },
+    build = ":Neorg sync-parsers",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    config = function()
+      require("neorg").setup {
+        load = {
+            ["core.defaults"] = {}, 
+            ["core.concealer"] = {},
+            ["core.dirman"] = {
+                config = {
+                workspaces = {
+                    work = "~/notes/work",
+                    home = "~/notes/home",
+                }
+            }
+        }
+        },
+      }
+    end,
   },
 }
 
