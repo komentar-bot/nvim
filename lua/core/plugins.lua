@@ -76,8 +76,7 @@ local plugins = {
             ["core.dirman"] = {
                 config = {
                 workspaces = {
-                    work = "~/notes/work",
-                    home = "~/notes/home",
+                    journal = "~/notes/journal",
                 }
             }
         }
