@@ -36,5 +36,4 @@ on_colors = function(colors) colors.comment = "#686f89"
     }
   end,
 })
-vim.cmd([[colorscheme tokyonight]])
 
