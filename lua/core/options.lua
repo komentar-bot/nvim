@@ -34,6 +34,7 @@ o.signcolumn = "yes"
 o.cursorline = true
 
 -- Better editing experience
+o.conceallevel = 1
 o.expandtab = true
 o.smarttab = true
 o.cindent = true

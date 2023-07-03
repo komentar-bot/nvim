@@ -1,5 +1,5 @@
 require("tokyonight").setup({
-style = "storm",
+style = "night",
 on_colors = function(colors) colors.comment = "#686f89"
     colors.fg_gutter = "#686f89"
     colors.dark5= "#c2c506"
@@ -37,3 +37,4 @@ on_colors = function(colors) colors.comment = "#686f89"
   end,
 })
 
+vim.cmd[[colorscheme tokyonight]]
