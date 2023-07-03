@@ -11,6 +11,7 @@
 7. Miktek, latex distribution [link](https://miktex.org/download). Net Installer for full package installation. Check update on miktex console after installation.
 8. Strawberry Perl [link](https://strawberryperl.com/).
 9. SumatraPDF, enable all the options on options menu.
+10. nvim-neorg, create folder for neorg workspace manually if it doesn't provide automatically.
 
 PS. Check your nvim config `:checkhealth`
 
