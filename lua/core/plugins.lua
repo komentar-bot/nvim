@@ -68,15 +68,20 @@ local plugins = {
     config = function()
       require("neorg").setup {
         load = {
-            ["core.defaults"] = {}, 
-            ["core.dirman"] = {
-                config = {
-                workspaces = {
-                    journal = "~/notes/journal",
-                    neovim = "~/notes/neovim",
-                }
+          ["core.defaults"] = {}, -- Loads default behaviour
+          ["core.concealer"] = {
+            config = {
+            folds = false
             }
-        }
+            }, -- Adds pretty icons to your documents
+          ["core.dirman"] = { -- Manages Neorg workspaces
+            config = {
+              workspaces = {
+                notes = "~/notes",
+              },
+            default_workspace = "notes",
+            },
+          },
         },
       }
     end,

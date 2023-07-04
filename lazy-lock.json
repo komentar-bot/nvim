@@ -5,7 +5,7 @@
   "cmp-dictionary": { "branch": "main", "commit": "3a6035b34b67f4a9b6142086c02d9e2673fa4810" },
   "cmp-path": { "branch": "main", "commit": "91ff86cd9c29299a64f968ebb45846c485725f23" },
   "cmp_luasnip": { "branch": "master", "commit": "18095520391186d634a0045dacaa346291096566" },
-  "friendly-snippets": { "branch": "main", "commit": "c85153a188b260b908bc35ffedff64810a930b64" },
+  "friendly-snippets": { "branch": "main", "commit": "17245edcd1195ad88d60ae13fb1e90d1df9b2fc9" },
   "lazy.nvim": { "branch": "main", "commit": "f8611632d0f9c6818e8eb54f9bcd1dad122b5a7f" },
   "lualine.nvim": { "branch": "master", "commit": "05d78e9fd0cdfb4545974a5aa14b1be95a86e9c9" },
   "neorg": { "branch": "main", "commit": "6fece1546d051a5f2a2d932d5978beec1ef920ab" },
