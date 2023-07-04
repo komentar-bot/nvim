@@ -47,6 +47,12 @@ local plugins = {
         "nvim-tree/nvim-tree.lua",
         dependencies = { { "nvim-tree/nvim-web-devicons", lazy = true } },
     },
+
+    -- zen mode--
+    {
+        "folke/zen-mode.nvim",
+        dependencies = { { "folke/twilight.nvim", lazy = true } },
+    },
     -- Tim Pope Plugins --
 	"tpope/vim-surround",
 
