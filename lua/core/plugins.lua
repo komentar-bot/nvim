@@ -70,11 +70,12 @@ local plugins = {
     {
     "nvim-neorg/neorg",
     build = ":Neorg sync-parsers",
-    dependencies = { "nvim-lua/plenary.nvim" },
+    dependencies = { {"nvim-lua/plenary.nvim"},{ "nvim-neorg/neorg-telescope" } },
     config = function()
       require("neorg").setup {
         load = {
           ["core.defaults"] = {}, -- Loads default behaviour
+          ["core.integrations.telescope"] = {},
           ["core.concealer"] = {
             config = {
             folds = false
