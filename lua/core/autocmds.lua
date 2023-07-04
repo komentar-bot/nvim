@@ -19,7 +19,8 @@ vim.api.nvim_create_autocmd({'BufEnter','BufAdd','BufNew','BufNewFile','BufWinEn
     callback = function()
         vim.opt.foldmethod     = 'expr'
         vim.opt.foldexpr       = 'nvim_treesitter#foldexpr()'
+        vim.cmd[[set nofoldenable]]
     end
 })
 ---ENDWORKAROUND
-
+--
