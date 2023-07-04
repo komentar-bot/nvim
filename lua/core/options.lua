@@ -90,4 +90,4 @@ o.wildmode = "longest,list:longest,full"
 -- o.foldnestmax = 3
 -- o.foldminlines = 1
 --
-opt.mouse = "a"
+opt.mouse = ""
