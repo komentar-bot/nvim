@@ -11,6 +11,9 @@ map("i", "<C-A>", "<ESC>I")
 -- Load recent sessions
 map("n", "<leader>sl", "<CMD>SessionLoad<CR>")
 
+map("n", "<f5>", "<CMD>ToggleBackground<CR>")
+
+
 -- maps for go down and up 
 map("n", "j", "gj")
 map("n", "k", "gk")

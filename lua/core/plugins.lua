@@ -57,8 +57,9 @@ local plugins = {
 	"tpope/vim-surround",
 
     -- Colorscheme --
+    --
     {
-    "folke/tokyonight.nvim",
+    "gruvbox-community/gruvbox",
     lazy = false,     
     priority = 1000,     
     },
