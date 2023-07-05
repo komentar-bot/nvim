@@ -1,4 +1,6 @@
 vim.opt_local.conceallevel = 2
+vim.opt_local.shiftwidth=0
+vim.opt_local.foldlevel=99
 
 require'cmp'.setup.buffer{
 sources = {

@@ -1,1 +1,2 @@
-vim.opt.linebreak = true
+vim.opt_local.linebreak = true
+
