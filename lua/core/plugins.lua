@@ -75,7 +75,6 @@ local plugins = {
             auto_set_mode_filetype_allowlist = {
                 "text",
             },
-            softener = { latex = 1,3 },
     }
     end
     },
