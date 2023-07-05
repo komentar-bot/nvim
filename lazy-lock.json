@@ -21,7 +21,8 @@
   "telescope.nvim": { "branch": "master", "commit": "b79cd6c88b3d96b0f49cb7d240807cd59b610cd8" },
   "twilight.nvim": { "branch": "main", "commit": "a4843e6e67092a1e6fa9666f02bf0ab59174c1df" },
   "vim-surround": { "branch": "master", "commit": "3d188ed2113431cf8dac77be61b842acb64433d9" },
-  "vimtex": { "branch": "master", "commit": "91fbb48c0b850684a082801138dddc941a427d38" },
+  "vimtex": { "branch": "master", "commit": "fa303890f2697bbbdd72dfe6bd1aea1df420dd45" },
   "which-key.nvim": { "branch": "main", "commit": "d871f2b664afd5aed3dc1d1573bef2fb24ce0484" },
+  "wrapping.nvim": { "branch": "master", "commit": "5e87f1424c86c50d3bc205830aa56ed1cad45467" },
   "zen-mode.nvim": { "branch": "main", "commit": "68f554702de63f4b7b6b6d4bcb10178f41a0acc7" }
 }

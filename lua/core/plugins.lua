@@ -69,6 +69,17 @@ local plugins = {
     lazy = false,     
     },
     {
+    "andrewferrier/wrapping.nvim",
+    config = function()
+        require("wrapping").setup {
+            auto_set_mode_filetype_allowlist = {
+                "text",
+            },
+            softener = { latex = 1,3 },
+    }
+    end
+    },
+    {
     "nvim-neorg/neorg",
     build = ":Neorg sync-parsers",
     dependencies = { {"nvim-lua/plenary.nvim"},{ "nvim-neorg/neorg-telescope" } },
