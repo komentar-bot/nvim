@@ -16,9 +16,13 @@ end, {})
             light0_hard = "#ebdbb2",
             light1 = "#f8f8f2",
             dark1= "#3c3836",
+            dark4 = "#a89984",
         },
         overrides = {
-            SignColumn = {bg = "#504945"}
+            SignColumn = {bg = "#a89984"},
+            CursorLine = {bg = "NONE"},
+            CursorLineNr = {bg = "NONE"},
+
         }
       })
 
