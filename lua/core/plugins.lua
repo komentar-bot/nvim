@@ -59,8 +59,7 @@ local plugins = {
     -- Colorscheme --
     --
     {
-    "gruvbox-community/gruvbox",
-    lazy = false,     
+    "ellisonleao/gruvbox.nvim",
     priority = 1000,     
     },
 

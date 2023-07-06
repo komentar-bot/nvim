@@ -31,7 +31,7 @@ o.encoding="utf-8"
 o.numberwidth = 2
 o.relativenumber = false
 o.signcolumn = "yes"
-o.cursorline = true
+o.cursorline = false
 
 -- Better editing experience
 o.conceallevel = 1
