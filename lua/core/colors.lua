@@ -13,11 +13,11 @@ end, {})
       require("gruvbox").setup({
         contrast = "hard",
         palette_overrides = {
-            light0_hard = "#ebdbb2",
+            light0_hard = "#fbf1c7",
             light1 = "#f8f8f2",
-            light2= "#f8f8f2", 
-            dark1= "#3c3836", 
-            dark2= "#3c3836", 
+            light2= "#f8f8f2",
+            dark1= "#3c3836",
+            dark2= "#1B1D1E",
             dark4 = "#a89984",
         },
         overrides = {
