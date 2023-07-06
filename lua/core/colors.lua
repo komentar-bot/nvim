@@ -19,7 +19,6 @@ end, {})
             dark4 = "#a89984",
         },
         overrides = {
-            SignColumn = {bg = "#a89984"},
             CursorLine = {bg = "NONE"},
             CursorLineNr = {bg = "NONE", fg= "#d65d0e"},
         }
