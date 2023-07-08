@@ -6,7 +6,7 @@
   "cmp-path": { "branch": "main", "commit": "91ff86cd9c29299a64f968ebb45846c485725f23" },
   "cmp_luasnip": { "branch": "master", "commit": "18095520391186d634a0045dacaa346291096566" },
   "friendly-snippets": { "branch": "main", "commit": "a94db1ee6ddfd238e725b0f90163fdd65d382464" },
-  "gruvbox.nvim": { "branch": "main", "commit": "00437e1e0e282363cb64349da7dd838f6d23e2f0" },
+  "gruvbox.nvim": { "branch": "main", "commit": "646af72736b2d77a945c03015fc6ede3d12d9565" },
   "lazy.nvim": { "branch": "main", "commit": "5af331ea65418dc9361769891921fdee4bcc837a" },
   "lualine.nvim": { "branch": "master", "commit": "05d78e9fd0cdfb4545974a5aa14b1be95a86e9c9" },
   "neorg": { "branch": "main", "commit": "95ec60f8bf7c9757778e7968b693282d7ec0aee2" },
