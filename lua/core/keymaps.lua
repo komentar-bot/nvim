@@ -34,6 +34,8 @@ map("n", "<c-b>", ":ls<CR>:b<Space>", opts )
 map("n", "<leader>h", ":bprevious<CR>", opts )
 map("n", "<leader>l", ":bnext<CR>", opts )
 
+map("n", "<F3>", ":nohlsearch<CR>")
+
 ---------------------------------------------
 -- PLUGIN KEYBINDING
 ---------------------------------------------
