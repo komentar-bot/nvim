@@ -12,6 +12,9 @@ end, {})
 
       require("gruvbox").setup({
         contrast = "hard",
+    palette_overrides = {
+        light7 = "#a7adba",
+    }
       })
 
 vim.cmd[[colorscheme gruvbox]]
