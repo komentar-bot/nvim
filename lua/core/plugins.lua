@@ -51,7 +51,7 @@ local plugins = {
     -- zen mode--
     {
         "folke/zen-mode.nvim",
-        dependencies = { { "folke/twilight.nvim", lazy = true } },
+        dependencies = { { "folke/twilight.nvim", lazy = true, opts= { context = 4} } },
     },
     -- Tim Pope Plugins --
 	"tpope/vim-surround",
