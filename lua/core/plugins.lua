@@ -39,7 +39,6 @@ local plugins = {
         "L3MON4D3/LuaSnip",
         "rafamadriz/friendly-snippets",
 
-        "folke/which-key.nvim",
     -- Status line --
         "nvim-lualine/lualine.nvim",
     -- File management --
