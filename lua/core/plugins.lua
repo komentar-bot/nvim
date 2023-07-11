@@ -110,6 +110,20 @@ local plugins = {
             default_workspace = "notes",
             },
           },
+        ["core.summary"] = {},
+        ["core.esupports.metagen"] = {
+
+            config = {
+tab = '  ',
+template = {
+            { 'title', function() return vim.fn.expand("%:t:r:S") end },
+            { 'date', function() return os.date '"%Y-%m-%d"' end },
+            { 'tags', '' },
+            { 'categories', '' },
+          },
+          },
+
+                    },
         ["core.keybinds"] = {
             config = {
                 hook = function(keybinds)
