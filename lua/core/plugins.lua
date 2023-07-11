@@ -85,19 +85,18 @@ local plugins = {
       require("neorg").setup {
         load = {
           ["core.defaults"] = {}, -- Loads default behaviour
-
           ["core.highlights"] = {
             config = {
-highlights = {
-
-links = {
-file = "+@string", 
-},                         
-
-
-},
-},
-},
+                highlights = {
+                    links = {
+                        file = "+@string",
+                        location = {
+                            url = "+@string",
+                                },
+                            },
+                        },
+                    },
+                },
           ["core.integrations.telescope"] = {},
           ["core.concealer"] = {
             config = {
