@@ -111,6 +111,15 @@ local plugins = {
             default_workspace = "notes",
             },
           },
+["core.keybinds"] = {
+    config = {
+        hook = function(keybinds)
+keybinds.remap_key("norg", "n", "<C-Space>", "<LocalLeader>,")
+ end,
+    }
+}
+
+
         },
       }
     end,
