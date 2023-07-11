@@ -5,8 +5,8 @@ neorg_callbacks.on_event("core.keybinds.events.enable_keybinds", function(_, key
     keybinds.map_event_to_mode("norg", {
         n = { -- Bind keys in normal mode
             { "<C-s>", "core.integrations.telescope.find_linkable" },
+            { "<leader>c", "core.qol.todo_items.todo.task_cycle" },
         },
-
         i = { -- Bind in insert mode
             { "<C-l>", "core.integrations.telescope.insert_link" },
         },
@@ -62,13 +62,6 @@ template = {
           },
 
                     },
-        ["core.keybinds"] = {
-            config = {
-                hook = function(keybinds)
-                    keybinds.remap_key("norg", "n", "<C-Space>", "<LocalLeader>,")
-                 end,
-            },
-        },
         ["core.completion"] ={
             config = {
             engine = "nvim-cmp",
