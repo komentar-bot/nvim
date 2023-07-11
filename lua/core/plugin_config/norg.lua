@@ -15,3 +15,65 @@ neorg_callbacks.on_event("core.keybinds.events.enable_keybinds", function(_, key
         noremap = true,
     })
 end)
+
+      require("neorg").setup {
+        load = {
+          ["core.defaults"] = {}, -- Loads default behaviour
+          ["core.highlights"] = {
+            config = {
+                highlights = {
+                    links = {
+                        file = "+@string",
+                        location = {
+                            url = "+@string",
+                                },
+                            },
+                        },
+                    },
+                },
+          ["core.integrations.telescope"] = {},
+          ["core.concealer"] = {
+            config = {
+            folds = false
+            }
+            }, -- Adds pretty icons to your documents
+          ["core.dirman"] = { -- Manages Neorg workspaces
+            config = {
+              workspaces = {
+                notes = "~/notes",
+                aca = "~/notes/aca",
+                consplus = "~/notes/consplus",
+              },
+            index = "index.norg",
+            default_workspace = "notes",
+            },
+          },
+        ["core.summary"] = {},
+        ["core.esupports.metagen"] = {
+
+            config = {
+tab = '  ',
+template = {
+            { 'title', function() return vim.fn.expand("%:t:r:S") end },
+            { 'date', function() return os.date '"%Y-%m-%d"' end },
+            { 'tags', '' },
+            { 'categories', '' },
+          },
+          },
+
+                    },
+        ["core.keybinds"] = {
+            config = {
+                hook = function(keybinds)
+                    keybinds.remap_key("norg", "n", "<C-Space>", "<LocalLeader>,")
+                 end,
+            },
+        },
+        ["core.completion"] ={
+            config = {
+            engine = "nvim-cmp",
+                        },
+                    },
+        ["core.integrations.nvim-cmp"] = {},
+        },
+      }
