@@ -48,7 +48,7 @@ end)
             config = {
               workspaces = {
                 aca = "~/notes/aca",
-                consplus = "~/notes/consplus",
+                archiplus = "~/notes/archiplus",
               },
             index = "index.norg",
             },
