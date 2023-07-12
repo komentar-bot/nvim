@@ -37,15 +37,20 @@ end)
             folds = false
             }
             }, -- Adds pretty icons to your documents
+        ["core.presenter"] = {
+          config = {
+            zen_mode = "zen-mode",
+          },
+        },
+        ["core.integrations.zen_mode"] = {},
+
           ["core.dirman"] = { -- Manages Neorg workspaces
             config = {
               workspaces = {
-                notes = "~/notes",
                 aca = "~/notes/aca",
                 consplus = "~/notes/consplus",
               },
             index = "index.norg",
-            default_workspace = "notes",
             },
           },
         ["core.summary"] = {},
@@ -68,5 +73,11 @@ template = {
                         },
                     },
         ["core.integrations.nvim-cmp"] = {},
+        ["core.export"] = {},
+        ["core.export.markdown"] = {
+          config = {
+            extensions = "all",
+          },
+        },
         },
       }
