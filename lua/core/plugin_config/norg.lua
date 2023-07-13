@@ -31,27 +31,24 @@ end)
                         },
                     },
                 },
-          ["core.integrations.telescope"] = {},
-          ["core.concealer"] = {}, -- Adds pretty icons to your documents. Create lag
+        ["core.integrations.telescope"] = {},
         ["core.presenter"] = {
           config = {
             zen_mode = "zen-mode",
           },
         },
         ["core.integrations.zen_mode"] = {},
-
           ["core.dirman"] = { -- Manages Neorg workspaces
             config = {
               workspaces = {
                 aca = "~/notes/aca",
                 archiplus = "~/notes/archiplus",
               },
-            index = "index.norg",
+            default_workspace = "aca",
             },
           },
         ["core.summary"] = {},
         ["core.esupports.metagen"] = {
-
             config = {
 tab = '  ',
 template = {
