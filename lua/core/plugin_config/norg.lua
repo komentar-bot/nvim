@@ -32,11 +32,8 @@ end)
                     },
                 },
         ["core.integrations.telescope"] = {},
-
-        ["core.concealer"] = {},
         ["core.autocommands"] = {},
         ["core.integrations.treesitter"] = {},
- 
         ["core.presenter"] = {
           config = {
             zen_mode = "zen-mode",
