@@ -32,11 +32,7 @@ end)
                     },
                 },
           ["core.integrations.telescope"] = {},
-          ["core.concealer"] = {
-            config = {
-            folds = false
-            }
-            }, -- Adds pretty icons to your documents
+          ["core.concealer"] = {}, -- Adds pretty icons to your documents. Create lag
         ["core.presenter"] = {
           config = {
             zen_mode = "zen-mode",
