@@ -75,7 +75,13 @@ o.splitright = true
 o.splitbelow = true
 
 -- Enable autocompletion
-o.wildmode = "longest,list:longest,full"
+--o.wildmode = "longest,list:longest,full"
+o.wildmenu = true
+o.wildmode = 'longest,full'
+o.wildoptions = 'pum'
+o.pumblend=20
+o.pumheight = 15
+o.wildignorecase = true -- Ignore case when completing file names and directories
 
 -- Preserve view while jumping
 -- BUG This option causes an error!
