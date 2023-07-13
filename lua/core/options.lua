@@ -91,7 +91,7 @@ o.wildignorecase = true -- Ignore case when completing file names and directorie
 -- When running macros and regexes on a large file, lazy redraw tells neovim/vim not to draw the screen
 -- o.lazyredraw = true
 
--- Better folds (don't fold by default)
+-- Better folds (don't fold by default), now it deals with autocmd
 -- o.foldmethod = 'indent'
 -- o.foldlevelstart = 99
 -- o.foldnestmax = 3
