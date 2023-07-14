@@ -34,7 +34,7 @@ map("n", "<c-b>", ":ls<CR>:b<Space>", opts )
 map("n", "<leader>h", ":bprevious<CR>", opts )
 map("n", "<leader>l", ":bnext<CR>", opts )
 
-map("n", "<F3>", ":nohlsearch<CR>")
+map("n", "<leader><esc>", ":nohlsearch<CR>", opts)
 
 --  navigate through popup pum menu  
 --vim.api.nvim_set_keymap('i', '<Esc>', 'pumvisible() ? "\\<C-e>" : "\\<Esc>"', {expr = true, noremap = true})
