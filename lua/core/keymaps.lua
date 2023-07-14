@@ -36,6 +36,14 @@ map("n", "<leader>l", ":bnext<CR>", opts )
 
 map("n", "<F3>", ":nohlsearch<CR>")
 
+--  navigate through popup pum menu  
+--vim.api.nvim_set_keymap('i', '<Esc>', 'pumvisible() ? "\\<C-e>" : "\\<Esc>"', {expr = true, noremap = true})
+vim.api.nvim_set_keymap('i', '<CR>', 'pumvisible() ? "\\<C-y>" : "\\<c-g>u<CR>"', {expr = true, noremap = true})
+vim.api.nvim_set_keymap('i', '<Tab>', 'pumvisible() ? "\\<C-n>" : "\\<Tab>"', {expr = true, noremap = true})
+vim.api.nvim_set_keymap('i', '<S-Tab>', 'pumvisible() ? "\\<C-p>" : "\\<Tab>"', {expr = true, noremap = true})
+
+
+
 ---------------------------------------------
 -- PLUGIN KEYBINDING
 ---------------------------------------------

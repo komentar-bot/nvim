@@ -19,7 +19,7 @@ end
 
 --   פּ ﯟ   some other good icons
 local kind_icons = {
-  Text = "",
+  Text = "",
   Method = "m",
   Function = "",
   Constructor = "",
@@ -35,7 +35,7 @@ local kind_icons = {
   Keyword = "",
   Snippet = "",
   Color = "",
-  File = "",
+  File = "󰔱",
   Reference = "",
   Folder = "",
   EnumMember = "",

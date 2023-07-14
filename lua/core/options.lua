@@ -9,7 +9,11 @@ g.maplocalleader = ","
 
 cmd('syntax on')
 vim.api.nvim_command('filetype plugin indent on')
-opt.shortmess:append "c"
+
+-- Set completeopt to have a better completion experience
+o.completeopt="menuone,noinsert,noselect"
+-- Avoid showing message extra message when using completion
+opt.shortmess:append({ c = true })
 
 -- scheme
 o.termguicolors = true
@@ -79,7 +83,7 @@ o.splitbelow = true
 o.wildmenu = true
 o.wildmode = 'longest,full'
 o.wildoptions = 'pum'
-o.pumblend=20
+o.pumblend=5
 o.pumheight = 15
 o.wildignorecase = true -- Ignore case when completing file names and directories
 

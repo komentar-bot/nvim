@@ -33,7 +33,7 @@ local plugins = {
         "hrsh7th/cmp-buffer",
         "hrsh7th/cmp-path",
         "hrsh7th/cmp-cmdline",
-        "uga-rosa/cmp-dictionary",
+        "hrsh7th/cmp-omni",
         "saadparwaiz1/cmp_luasnip",
     -- Snippet --
         "L3MON4D3/LuaSnip",
