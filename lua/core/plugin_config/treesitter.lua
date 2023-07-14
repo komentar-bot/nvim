@@ -4,11 +4,11 @@ if not status_ok then
 end
 
 configs.setup({
-  ensure_installed = {"json", "lua","markdown","norg" }, -- one of "all" or a list of languages
+  ensure_installed = {"json", "lua","markdown","norg","latex" }, -- one of "all" or a list of languages
 	ignore_install = { "" }, -- List of parsers to ignore installing
 	highlight = {
 		enable = true, -- false will disable the whole extension
-		disable = { "" }, -- list of language that will be disabled
+		disable = { "latex" }, -- list of language that will be disabled
 	},
 	indent = { enable = true, disable = { "python", "css" } },
  rainbow = {
