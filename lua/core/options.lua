@@ -92,9 +92,10 @@ o.wildignorecase = true -- Ignore case when completing file names and directorie
 -- o.lazyredraw = true
 
 -- Better folds (don't fold by default), now it deals with autocmd
--- o.foldmethod = 'indent'
--- o.foldlevelstart = 99
--- o.foldnestmax = 3
--- o.foldminlines = 1
---
+opt.foldmethod      = 'expr'
+opt.foldexpr        = 'nvim_treesitter#foldexpr()'
+opt.foldlevelstart  = 99
+opt.foldnestmax     = 3
+opt.foldminlines    = 1
+opt.fillchars       = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
 opt.mouse = ""
