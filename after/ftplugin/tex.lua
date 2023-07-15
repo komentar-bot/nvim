@@ -1,4 +1,4 @@
-vim.opt_local.conceallevel = 3
+vim.opt_local.conceallevel = 2
 vim.opt_local.shiftwidth=0
 
 local kind_icons = {

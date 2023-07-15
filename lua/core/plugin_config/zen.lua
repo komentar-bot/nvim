@@ -6,6 +6,7 @@
                 foldcolumn = "0",
                 scrolloff = 999,
                 cursorline = false,
+                conceallevel = 3
             }
         },
         plugins = {
