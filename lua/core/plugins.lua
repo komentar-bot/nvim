@@ -55,7 +55,7 @@ local plugins = {
             lazy = true, 
             opts= { 
                 dimming = {alpha = 0.2,},
-                context = 4 
+                context = 4 ,
                 treesitter = true,
             } 
         } },
