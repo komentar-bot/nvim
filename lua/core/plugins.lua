@@ -61,6 +61,8 @@ local plugins = {
         } },
     },
 
+    "chentoast/marks.nvim",
+
     -- Tim Pope Plugins --
 	"tpope/vim-surround",
 

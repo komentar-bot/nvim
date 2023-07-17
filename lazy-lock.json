@@ -9,6 +9,7 @@
   "gruvbox.nvim": { "branch": "main", "commit": "756c121fda802e179771ded27ba189b3824b5447" },
   "lazy.nvim": { "branch": "main", "commit": "25beed5e2e935ebc00d7e3eed1dc502df3c40e39" },
   "lualine.nvim": { "branch": "master", "commit": "05d78e9fd0cdfb4545974a5aa14b1be95a86e9c9" },
+  "marks.nvim": { "branch": "master", "commit": "76aca5069c5ce5c0099e30168649e6393e494f26" },
   "neorg": { "branch": "main", "commit": "c801ae5165423f4c70841e548208c74da86acf72" },
   "neorg-telescope": { "branch": "main", "commit": "d24f445c912451ddbf17cbe8da36561b51b10d39" },
   "nvim-cmp": { "branch": "main", "commit": "c4e491a87eeacf0408902c32f031d802c7eafce8" },
