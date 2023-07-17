@@ -10,7 +10,6 @@
             }
         },
         plugins = {
-            gitsigns = { enabled = true },
             twilight = { enabled = true }
         }
     }

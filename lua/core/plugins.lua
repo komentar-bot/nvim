@@ -61,8 +61,6 @@ local plugins = {
         } },
     },
 
-    -- git --
-    "lewis6991/gitsigns.nvim",
     -- Tim Pope Plugins --
 	"tpope/vim-surround",
 
