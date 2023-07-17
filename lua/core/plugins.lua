@@ -67,7 +67,7 @@ local plugins = {
     -- Colorscheme --
     --
     {
-    "777uliahshafar/gruvbox.nvim",
+    "777uliahshafar/mygruvbox.nvim",
     priority = 1000,     
     },
 
