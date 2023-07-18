@@ -55,7 +55,7 @@ local plugins = {
             lazy = true, 
             opts= { 
                 dimming = {alpha = 0.2,},
-                context = 5 ,
+                context = 8 ,
                 treesitter = true,
                 exclude = {"bib"},
             } 
