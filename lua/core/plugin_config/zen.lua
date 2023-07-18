@@ -1,12 +1,15 @@
     require("zen-mode").setup {
         window = {
-            width = 80,
+            backdrop = 1,
+            width = 58,
             options = { 
+                signcolumn = "no",
                 number = false,
                 foldcolumn = "0",
                 scrolloff = 999,
+                list = false,
                 cursorline = false,
-                conceallevel = 3
+                conceallevel = 3,
             }
         },
         plugins = {
