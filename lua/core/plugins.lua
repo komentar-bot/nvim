@@ -54,8 +54,8 @@ local plugins = {
             "folke/twilight.nvim", 
             lazy = true, 
             opts= { 
-                dimming = {alpha = 0.2,},
-                context = 8 ,
+                dimming = {alpha = 0.15,},
+                context = 3 ,
                 treesitter = true,
                 exclude = {"bib"},
             } 
