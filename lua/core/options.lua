@@ -16,7 +16,7 @@ o.completeopt="menuone,noinsert,noselect"
 opt.shortmess:append({ c = true })
 
 -- scheme
-o.termguicolors = true
+opt.termguicolors = true
 -- o.background = 'dark'
 
 -- Do not save when switching buffers
