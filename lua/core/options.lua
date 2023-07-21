@@ -36,7 +36,7 @@ o.numberwidth = 2
 o.relativenumber = false
 o.signcolumn = "yes"
 o.cursorline = true
-o.guicursor = "i-ci-ve:block-Cursor,i:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor" 
+opt.guicursor = "i:block"
 
 -- Better editing experience
 o.conceallevel = 1
