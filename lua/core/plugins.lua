@@ -36,8 +36,10 @@ local plugins = {
         "hrsh7th/cmp-omni",
         "saadparwaiz1/cmp_luasnip",
     -- Snippet --
-        "L3MON4D3/LuaSnip",
-        "rafamadriz/friendly-snippets",
+    {
+    "L3MON4D3/LuaSnip",
+    dependencies = { { "rafamadriz/friendly-snippets", lazy = true } },    
+    },
 
     -- Status line --
         "nvim-lualine/lualine.nvim",
