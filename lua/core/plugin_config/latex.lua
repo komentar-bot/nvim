@@ -13,5 +13,8 @@ vim.g.vimtex_compiler_latexmk = {
       },
     }
 
+vim.g.vimtex_view_general_viewer = "SumatraPDF"
+vim.g.vimtex_view_general_options = "-reuse-instance -forward-search @tex @line @pdf"
+
 vim.g.vimtex_compiler_progname = 'nvr'
 vim.g.vimtex_fold_enabled =true
