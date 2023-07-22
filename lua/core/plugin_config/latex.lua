@@ -1,9 +1,14 @@
+local g = vim.g
+
+-- compilation
+g.vimtex_fold_enabled =true
+
 -- change defaul compiler engine
-vim.g.vimtex_compiler_latexmk_engines = {
+g.vimtex_compiler_latexmk_engines = {
     _ = '-lualatex'
 }
 
-vim.g.vimtex_compiler_latexmk = {
+g.vimtex_compiler_latexmk = {
       options = {
         "-shell-escape",
         "-verbose",
@@ -13,8 +18,21 @@ vim.g.vimtex_compiler_latexmk = {
       },
     }
 
-vim.g.vimtex_view_general_viewer = "SumatraPDF"
-vim.g.vimtex_view_general_options = "-reuse-instance -forward-search @tex @line @pdf"
+g.vimtex_view_general_viewer = "SumatraPDF"
+g.vimtex_view_general_options = "-reuse-instance -forward-search @tex @line @pdf"
 
-vim.g.vimtex_compiler_progname = 'nvr'
-vim.g.vimtex_fold_enabled =true
+-- warning errors
+g.vimtex_quickfix_mode = 0
+g.vimtex_log_ignore = ({
+  'Underfull',
+  'Overfull',
+  'specifier changed to',
+  'Token not allowed in a PDF string',
+})
+
+
+-- maps
+vim.api.nvim_buf_set_keymap(0, "n", "<leader>lc", "<plug>(vimtex-compile)", { noremap = false })
+vim.api.nvim_buf_set_keymap(0, "n", "<leader>le", "<plug>(vimtex-errors)", { noremap = false })
+vim.api.nvim_buf_set_keymap(0, "n", "<leader>lv", "<plug>(vimtex-view)", { noremap = false })
+vim.api.nvim_buf_set_keymap(0, "n", "<leader>ls", "<plug>(vimtex-toggle-main)", { noremap = false })
