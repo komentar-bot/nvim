@@ -4,7 +4,7 @@ end
 
 local ls = require "luasnip"
 
-require("luasnip.loaders.from_lua").load({paths = "~/.config/nvim/lua/snippets"})
+-- Config
 
 ls.config.set_config {
   -- This tells LuaSnip to remember to keep around the last snippet.
@@ -18,6 +18,7 @@ ls.config.set_config {
   enable_autosnippets = true,
 }
 
+-- Mapping
 -- <c-j> is my expansion key
 -- this will expand the current item or jump to the next item within the snippet.
 vim.keymap.set({ "i", "s" }, "<c-l>", function()
@@ -39,3 +40,4 @@ vim.keymap.set("i", "<c-j>", function()
     ls.change_choice(1)
   end
 end)
+
