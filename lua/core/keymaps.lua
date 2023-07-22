@@ -89,4 +89,3 @@ map("i", "<c-j>", function()
     ls.change_choice(1)
   end
 end)
-
