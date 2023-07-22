@@ -4,6 +4,8 @@ local function map(m, k, v)
 	vim.keymap.set(m, k, v, { silent = true })
 end
 
+local ls = require "luasnip"
+
 -- Mimic shell movements
 map("i", "<C-E>", "<ESC>A")
 map("i", "<C-A>", "<ESC>I")
@@ -64,3 +66,27 @@ map("n", "<leader>zz", require("zen-mode").toggle)
 
 -- nvim-cmp
 map("n", "<leader>ua", "<cmd>lua vim.g.cmptoggle = not vim.g.cmptoggle<CR>", { desc = "toggle nvim-cmp" })
+
+-- luasnip
+-- <c-j> is my expansion key
+-- this will expand the current item or jump to the next item within the snippet.
+map({ "i", "s" }, "<c-l>", function()
+  if ls.expand_or_jumpable() then
+    ls.expand_or_jump()
+  end
+end)
+
+-- <c-k> is my jump backwards key.
+-- this always moves to the previous item within the snippet
+map({ "i", "s" }, "<c-h>", function()
+  if ls.jumpable(-1) then
+    ls.jump(-1)
+  end
+end)
+
+map("i", "<c-j>", function()
+  if ls.choice_active() then
+    ls.change_choice(1)
+  end
+end)
+
