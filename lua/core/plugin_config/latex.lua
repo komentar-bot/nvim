@@ -1,6 +1,5 @@
 local g = vim.g
 
--- compilation
 g.vimtex_fold_enabled =true
 
 -- change defaul compiler engine
@@ -13,8 +12,8 @@ g.vimtex_compiler_latexmk = {
         "-shell-escape",
         "-verbose",
         "-file-line-error",
-        "-interaction=nonstopmode",
         "-synctex=1",
+        "-interaction=nonstopmode",
       },
     }
 
