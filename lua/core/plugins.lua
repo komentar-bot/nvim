@@ -28,12 +28,23 @@ local plugins = {
         end,
 		dependencies = { { "nvim-treesitter/nvim-treesitter-textobjects" } },
     },
+    -- LSP --
+    { 
+    "williamboman/mason.nvim",
+    build = ":MasonUpdate",
+    },
+    "williamboman/mason-lspconfig.nvim",
+    "neovim/nvim-lspconfig",
+    "jose-elias-alvarez/null-ls.nvim",
+    "jay-babu/mason-null-ls.nvim",
+
     -- Completion -- 
         "hrsh7th/nvim-cmp",
         "hrsh7th/cmp-buffer",
         "hrsh7th/cmp-path",
         "hrsh7th/cmp-cmdline",
         "hrsh7th/cmp-omni",
+        "hrsh7th/cmp-nvim-lsp",
         "saadparwaiz1/cmp_luasnip",
     -- Snippet --
     {
