@@ -65,6 +65,12 @@ local plugins = {
     },
 
     "chentoast/marks.nvim",
+    {
+    "numToStr/Comment.nvim",
+    config = function()
+        require("Comment").setup ()
+    end
+    },
 
     -- Tim Pope Plugins --
 	"tpope/vim-surround",
