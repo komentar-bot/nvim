@@ -13,16 +13,18 @@ require("cmp").setup.buffer {
     format = function(entry, vim_item)
       vim_item.kind = string.format("%s", kind_icons[vim_item.kind])
       vim_item.menu = ({
+        nvim_lsp = "[LSP]",
+        luasnip = "[Snippet]",
         path = "[Path]",
         omni = (vim.inspect(vim_item.menu):gsub('%"', "")),
-        luasnip = "[Snippet]",
       })[entry.source.name]
       return vim_item
     end,
   },
   sources = {
+    { name = "nvim_lsp" },
+    { name = "luasnip", keyword_length = 2 },
     { name = "path" },
     { name = "omni" },
-    { name = "luasnip", keyword_length = 2 },
   },
 }
