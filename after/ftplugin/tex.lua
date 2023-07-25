@@ -1,5 +1,5 @@
 vim.opt_local.conceallevel = 2
-vim.opt_local.shiftwidth=0
+vim.opt_local.shiftwidth = 0
 
 local kind_icons = {
   Text = "",
@@ -7,7 +7,7 @@ local kind_icons = {
   File = "󰔱",
 }
 
-require'cmp'.setup.buffer{
+require("cmp").setup.buffer {
 
   formatting = {
     format = function(entry, vim_item)
@@ -20,13 +20,9 @@ require'cmp'.setup.buffer{
       return vim_item
     end,
   },
-sources = {
-    {   name = "path" },
-    {   name = "omni" },
-    {   name = "luasnip",
-        keyword_length = 2,
-    },
+  sources = {
+    { name = "path" },
+    { name = "omni" },
+    { name = "luasnip", keyword_length = 2 },
   },
-
 }
-

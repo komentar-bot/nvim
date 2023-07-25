@@ -10,7 +10,7 @@ end
 
 require("luasnip/loaders/from_vscode").lazy_load()
 
-require("luasnip.loaders.from_lua").load({paths = "~/.config/nvim/snippets"})
+require("luasnip.loaders.from_lua").load { paths = "~/.config/nvim/snippets" }
 
 local check_backspace = function()
   local col = vim.fn.col "." - 1
@@ -122,14 +122,14 @@ cmp.setup {
     behavior = cmp.ConfirmBehavior.Replace,
     select = false,
   },
---  window = {
---    documentation = {
---       border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
---     },
---  },
-window = {
- documentation = false
- },
+  --  window = {
+  --    documentation = {
+  --       border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+  --     },
+  --  },
+  window = {
+    documentation = false,
+  },
   experimental = {
     ghost_text = false,
     native_menu = false,
@@ -139,11 +139,9 @@ window = {
 -- initialize global var to false -> nvim-cmp turned off per default
 vim.g.cmptoggle = false
 
-local cmp = require('cmp')
+local cmp = require "cmp"
 cmp.setup {
   enabled = function()
     return vim.g.cmptoggle
-  end
+  end,
 }
-
-
