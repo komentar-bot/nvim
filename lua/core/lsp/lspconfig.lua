@@ -10,25 +10,31 @@ end
 
 local keymap = vim.keymap -- for conciseness
 
--- enable keybinds only for when lsp server available
-local on_attach = function(bufnr)
-  -- keybind options
-  local opts = { noremap = true, silent = true, buffer = bufnr }
+local on_attach = function(_, bufnr)
+  -- See `:help vim.lsp.*` for documentation on any of the below functions
+  local bufopts = { noremap = true, silent = true, buffer = bufnr }
+  keymap.set("n", "<leader>k", vim.lsp.buf.hover, bufopts)
+  keymap.set("n", "<leader>rn", vim.lsp.buf.rename, bufopts)
+  keymap.set("n", "gi", vim.lsp.buf.implementation, bufopts)
+  keymap.set("n", "<leader>f", function()
+    vim.lsp.buf.format { async = true }
+  end, bufopts)
+  keymap.set("n", "<C-k>", vim.lsp.buf.signature_help, bufopts)
 
-  -- set keybinds
-  keymap.set("n", "gR", "<cmd>Telescope lsp_references<CR>", opts) -- show definition, references
-  keymap.set("n", "gD", vim.lsp.buf.declaration, opts) -- got to declaration
-  keymap.set("n", "gd", "<cmd>Telescope lsp_definitions<CR>", opts) -- see definition and make edits in window
-  keymap.set("n", "gi", "<cmd>Telescope lsp_implementations<CR>", opts) -- go to implementation
-  keymap.set("n", "gt", "<cmd>Telescope lsp_type_definitions<CR>", opts) -- go to implementation
-  keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts) -- see available code actions
-  keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts) -- see available code actions, in visual mode will apply to selection
-  keymap.set("n", "<leader>rn", ":IncRename ", opts) -- smart rename
-  keymap.set("n", "<leader>D", "<cmd>Telescope diagnostics bufnr=0<CR>", opts) -- show  diagnostics for file
-  keymap.set("n", "<leader>d", vim.diagnostic.open_float, opts) -- show diagnostics for line
-  keymap.set("n", "[d", vim.diagnostic.goto_prev, opts) -- jump to previous diagnostic in buffer
-  keymap.set("n", "]d", vim.diagnostic.goto_next, opts) -- jump to next diagnostic in buffer
-  keymap.set("n", "K", vim.lsp.buf.hover, opts) -- show documentation for what is under cursor
+  vim.api.nvim_create_autocmd("CursorHold", {
+    buffer = bufnr,
+    callback = function()
+      local opts = {
+        focusable = false,
+        close_events = { "BufLeave", "CursorMoved", "InsertEnter", "FocusLost" },
+        border = "rounded",
+        source = "always",
+        prefix = " ",
+        scope = "cursor",
+      }
+      vim.diagnostic.open_float(nil, opts)
+    end,
+  })
 end
 
 local capabilities = cmp_nvim_lsp.default_capabilities()
