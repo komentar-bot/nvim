@@ -80,4 +80,4 @@ map("i", "<c-j>", function()
 end)
 
 -- trouble
-map("n", "<leader>dt", ":TroubleToggle<cr>")
+map("n", "<c-d>", ":TroubleToggle<cr>")
