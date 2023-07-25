@@ -7,13 +7,13 @@ local opt = vim.opt
 g.mapleader = " "
 g.maplocalleader = ","
 
-cmd('syntax on')
-vim.api.nvim_command('filetype plugin indent on')
+cmd "syntax on"
+vim.api.nvim_command "filetype plugin indent on"
 
 -- Set completeopt to have a better completion experience
-o.completeopt="menuone,noinsert,noselect"
+o.completeopt = "menuone,noinsert,noselect"
 -- Avoid showing message extra message when using completion
-opt.shortmess:append({ c = true })
+opt.shortmess:append { c = true }
 
 -- scheme
 opt.termguicolors = true
@@ -31,7 +31,7 @@ o.scrolloff = 8
 
 -- Better editor UI
 o.number = true
-o.encoding="utf-8"
+o.encoding = "utf-8"
 o.numberwidth = 2
 o.relativenumber = false
 o.signcolumn = "yes"
@@ -50,7 +50,7 @@ o.tabstop = 4
 o.shiftwidth = 4
 o.softtabstop = -1 -- If negative, shiftwidth value is used
 o.list = true
-o.listchars = "trail:·,nbsp:◇,tab:→ ,extends:▸,precedes:◂"
+o.listchars = "trail:·,nbsp:◇,tab:  ,extends:▸,precedes:◂"
 -- o.listchars = 'eol:¬,space:·,lead: ,trail:·,nbsp:◇,tab:→-,extends:▸,precedes:◂,multispace:···⬝,leadmultispace:│   ,'
 -- o.formatoptions = 'qrn1'
 o.errorbells = false
@@ -81,9 +81,9 @@ o.splitbelow = true
 -- Enable autocompletion
 --o.wildmode = "longest,list:longest,full"
 o.wildmenu = true
-o.wildmode = 'longest,full'
-o.wildoptions = 'pum'
-o.pumblend=5
+o.wildmode = "longest,full"
+o.wildoptions = "pum"
+o.pumblend = 5
 o.pumheight = 15
 o.wildignorecase = true -- Ignore case when completing file names and directories
 
@@ -96,10 +96,10 @@ o.wildignorecase = true -- Ignore case when completing file names and directorie
 -- o.lazyredraw = true
 
 -- Better folds (don't fold by default), now it deals with autocmd
-opt.foldmethod      = 'expr'
-opt.foldexpr        = 'nvim_treesitter#foldexpr()'
-opt.foldlevelstart  = 99
-opt.foldnestmax     = 3
-opt.foldminlines    = 1
-opt.fillchars       = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
+opt.foldmethod = "expr"
+opt.foldexpr = "nvim_treesitter#foldexpr()"
+opt.foldlevelstart = 99
+opt.foldnestmax = 3
+opt.foldminlines = 1
+opt.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
 opt.mouse = ""
