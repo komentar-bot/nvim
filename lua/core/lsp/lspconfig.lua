@@ -13,28 +13,12 @@ local keymap = vim.keymap -- for conciseness
 local on_attach = function(_, bufnr)
   -- See `:help vim.lsp.*` for documentation on any of the below functions
   local bufopts = { noremap = true, silent = true, buffer = bufnr }
+  keymap.set("n", "gD", vim.lsp.buf.declaration, bufopts)
+  keymap.set("n", "<leader>d", vim.diagnostic.open_float, bufopts)
   keymap.set("n", "<leader>k", vim.lsp.buf.hover, bufopts)
   keymap.set("n", "<leader>rn", vim.lsp.buf.rename, bufopts)
   keymap.set("n", "gi", vim.lsp.buf.implementation, bufopts)
-  keymap.set("n", "<leader>f", function()
-    vim.lsp.buf.format { async = true }
-  end, bufopts)
-  keymap.set("n", "<C-k>", vim.lsp.buf.signature_help, bufopts)
-
-  vim.api.nvim_create_autocmd("CursorHold", {
-    buffer = bufnr,
-    callback = function()
-      local opts = {
-        focusable = false,
-        close_events = { "BufLeave", "CursorMoved", "InsertEnter", "FocusLost" },
-        border = "rounded",
-        source = "always",
-        prefix = " ",
-        scope = "cursor",
-      }
-      vim.diagnostic.open_float(nil, opts)
-    end,
-  })
+  keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, bufopts)
 end
 
 local capabilities = cmp_nvim_lsp.default_capabilities()
