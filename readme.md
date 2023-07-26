@@ -13,6 +13,7 @@
 9. SumatraPDF, enable all the options on options menu, latex on nvim.
 10. Add parent directories of the executable to your `PATH environment variable` see [link](https://www.wikihow.com/Change-the-PATH-Environment-Variable-on-Windows), find `edit the system environment variables` > on Advanced System properties tab click environment variables > click path then click edit > then add this `C:\Users\ul\AppData\Local\SumatraPDF\`.
 11. nvim-neorg, create folder for neorg workspace manually if it doesn't provide automatically.
+12. Zotero, BetterBibtex (synchronous bibliography).
 
 PS. Check your nvim config `:checkhealth`
 
