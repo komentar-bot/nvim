@@ -1,0 +1,5 @@
+defaultIndent: "\t\t\t\t\t\t\t\t"
+modifyLineBreaks:
+    textWrapOptions:
+        columns: -1
+
