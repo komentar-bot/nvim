@@ -3,6 +3,16 @@ require("neorg").setup {
     ["core.defaults"] = {}, -- Loads default behaviour
 
     ["core.concealer"] = {},
+    ["core.dirman"] = { -- Manages Neorg workspaces
+      config = {
+        workspaces = {
+          arc = "~/notes/architecture",
+          aca = "~/notes/academian",
+          main = "~/notes/main",
+        },
+        default_workspace = "main",
+      },
+    },
     ["core.highlights"] = {
       config = {
         highlights = {
@@ -17,15 +27,6 @@ require("neorg").setup {
     },
     ["core.integrations.telescope"] = {},
     ["core.integrations.treesitter"] = {},
-    ["core.dirman"] = { -- Manages Neorg workspaces
-      config = {
-        workspaces = {
-          aca = "~/notes/aca",
-          archi = "~/notes/archi",
-        },
-        default_workspace = "aca",
-      },
-    },
     ["core.summary"] = {},
     ["core.esupports.metagen"] = {
       config = {
