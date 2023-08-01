@@ -16,6 +16,19 @@ require("neorg").setup {
     ["core.highlights"] = {
       config = {
         highlights = {
+          anchors = {
+            declaration = "+Underlined",
+          },
+          headings = {
+            ["1"] = {
+              prefix = "+@label",
+              title = "+@label",
+            },
+            ["2"] = {
+              prefix = "+@attribute",
+              title = "+@attribute",
+            },
+          },
           links = {
             file = "+@string",
             location = {
