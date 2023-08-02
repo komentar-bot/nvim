@@ -1,5 +1,7 @@
 vim.opt_local.conceallevel = 2
 vim.opt_local.shiftwidth = 0
+vim.opt.updatetime = 1000
+vim.opt.swapfile = true
 
 local kind_icons = {
   Text = "",
