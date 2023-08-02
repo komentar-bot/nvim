@@ -80,4 +80,8 @@ map("i", "<c-j>", function()
 end)
 
 -- trouble
-map("n", "<leader>tt", ":TroubleToggle<cr>")
+map("n", "<leader>t", ":TroubleToggle<cr>")
+
+-- neorg
+map("n", "<leader>ac", ":Neorg workspace aca<cr>")
+map("n", "<leader>ar", ":Neorg workspace arc<cr>")
