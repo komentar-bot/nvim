@@ -9,7 +9,14 @@
 -- local augroup = vim.api.nvim_create_augroup
 local autocmd = vim.api.nvim_create_autocmd
 
+-- rm empty line
 autocmd({ "BufWritePre" }, {
   pattern = { "*" },
   command = [[%s/\s\+$//e]],
+})
+
+-- clear msg in cmdline
+autocmd({ "CursorHold" }, {
+  pattern = { "*" },
+  command = [[echon ""]],
 })
