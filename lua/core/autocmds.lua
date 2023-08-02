@@ -20,3 +20,9 @@ autocmd({ "CursorHold" }, {
   pattern = { "*" },
   command = [[echon ""]],
 })
+
+-- close quickfix menu after selecting choice
+autocmd("FileType", {
+  pattern = { "qf" },
+  command = [[nnoremap <buffer> <CR> <CR>:cclose<CR>]],
+})
