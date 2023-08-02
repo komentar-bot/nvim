@@ -85,3 +85,21 @@ map("n", "<leader>t", ":TroubleToggle<cr>")
 -- neorg
 map("n", "<leader>ac", ":Neorg workspace aca<cr>")
 map("n", "<leader>ar", ":Neorg workspace arc<cr>")
+
+-- quickfix built-in
+vim.cmd [[
+function! s:ZoomToggle() abort
+    if exists('t:zoomed') && t:zoomed
+        execute t:zoom_winrestcmd
+        let t:zoomed = 0
+    else
+        let t:zoom_winrestcmd = winrestcmd()
+        resize
+        vertical resize
+        let t:zoomed = 1
+    endif
+endfunction
+command! ZoomToggle call s:ZoomToggle()
+]]
+
+map("n", "gz", "<CMD>ZoomToggle<cr>")
