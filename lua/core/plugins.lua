@@ -80,7 +80,7 @@ local plugins = {
           dimming = { alpha = 0.15 },
           context = 5,
           treesitter = true,
-          exclude = { "bib" },
+          exclude = { "bib", "norg" },
         },
       },
     },
