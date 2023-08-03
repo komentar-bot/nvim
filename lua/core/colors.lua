@@ -8,8 +8,6 @@ create_cmd("ToggleBackground", function()
   end
 end, {})
 
-require("gruvbox").setup {
-  contrast = "hard",
-}
+require("gruvbox").setup {}
 
 vim.cmd [[colorscheme gruvbox]]
