@@ -15,14 +15,14 @@ snippet tmplt "Template"
 	\\usepackage{transparent}
 	\\usepackage{xcolor}
 	$2
-	
+
 	\\newcommand{\incfig}[2][1]{%
 		    \def\svgwidth{#1\columnwidth}
 		    \import{./figures/}{#2.pdf_tex}
 	}
 	$3
 	\\pdfsuppresswarningpagegroup=1
-	
+
 	\\begin{document}
 		    $0
 	\\end{document}
@@ -50,7 +50,7 @@ snippet begin \begin{} ... \end{} block
 # Maketitle
 snippet mkt maketitle
 	\\maketitle
-	
+
 # Tabular
 snippet tab tabular (or arbitrary) environment
 	\\begin{${1:tabular}}{${2:c}}
@@ -122,7 +122,7 @@ snippet item itemize environment
 	\\begin{itemize}
 		\\item ${0}
 	\\end{itemize}
-snippet it \item
+snippet ite \item
 	\\item ${1:${VISUAL}}
 # Description
 snippet desc description environment
@@ -237,7 +237,7 @@ snippet citey \citeyear
 snippet fcite \footcite[]{}
 	\\footcite[${1}]{${2}}${0}
 #Formating text: italic, bold, underline, small capital, emphase ..
-snippet ita italic text
+snippet it italic text
 	\\textit{${1:${VISUAL:text}}}${0}
 snippet bf bold face text
 	\\textbf{${1:${VISUAL:text}}}${0}
