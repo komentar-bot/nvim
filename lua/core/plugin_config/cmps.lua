@@ -147,6 +147,11 @@ cmp.setup {
   end,
 }
 
+dict.setup {
+  exact = -1,
+  max_items = 5,
+}
+
 dict.switcher {
   spelllang = {
     id = "~/AppData/Local/nvim/spell/id-cmp.dict",
