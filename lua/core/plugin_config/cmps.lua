@@ -149,7 +149,7 @@ cmp.setup {
 
 dict.switcher {
   spelllang = {
-    id = "C:/Users/ul/AppData/Local/nvim/spell/id-cmp.dict",
-    en_us = "C:/Users/ul/AppData/Local/nvim/spell/en-cmp.dict",
+    id = "~/AppData/Local/nvim/spell/id-cmp.dict",
+    en_us = "~/AppData/Local/nvim/spell/en-cmp.dict",
   },
 }
