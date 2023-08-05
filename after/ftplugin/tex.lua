@@ -4,9 +4,9 @@ vim.opt.updatetime = 1000
 vim.opt.swapfile = true
 
 local kind_icons = {
-  Text = "",
+  Text = "",
   Snippet = "",
-  File = "󰔱",
+  File = "",
 }
 
 require("cmp").setup.buffer {
