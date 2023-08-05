@@ -19,6 +19,7 @@ require("cmp").setup.buffer {
         luasnip = "[Snippet]",
         path = "[Path]",
         omni = (vim.inspect(vim_item.menu):gsub('%"', "")),
+        dictionary = "[Dict]",
       })[entry.source.name]
       return vim_item
     end,
@@ -28,5 +29,6 @@ require("cmp").setup.buffer {
     { name = "luasnip", keyword_length = 2 },
     { name = "path" },
     { name = "omni" },
+    { name = "dictionary", keyword_length = 2 },
   },
 }
