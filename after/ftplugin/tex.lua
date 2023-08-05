@@ -7,6 +7,14 @@ local kind_icons = {
   Text = "",
   Snippet = "",
   File = "",
+  Interface = "",
+  Unit = "",
+  Struct = "",
+  Event = "",
+  Value = "",
+  Keyword = "",
+  Constant = "",
+  Operator = "",
 }
 
 require("cmp").setup.buffer {
