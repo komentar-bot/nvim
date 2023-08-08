@@ -27,7 +27,7 @@ PS. Check your nvim config `:checkhealth`
 2. Miktek, latex distribution [link](https://miktex.org/download). Package installation on the fly is much better. Check update on miktex console after installation, latex on nvim.
 3. SumatraPDF, enable all the options on options menu, latex on nvim.
 4. Add SumatraPDF parent directories of the executable to your `PATH environment variable` see [link](https://www.wikihow.com/Change-the-PATH-Environment-Variable-on-Windows), open `edit the system environment variables` > on Advanced System properties tab click environment variables > click path then click edit > then add this `C:\Users\ul\AppData\Local\SumatraPDF\`.
-5. Zotero, BetterBibtex (synchronous bibliography).
+5. Zotero, BetterBibtex (synchronous bibliography), see [link](https://drive.google.com/drive/u/0/folders/1UsJqCA7hvCMOdPRt7kLBwdPOuTYu0gkL)
 6. SplitShow (dual-head presentation of PDF slides).
 7. Add some custom packages such as [helpers4ht](https://github.com/michal-h21/helpers4ht) or [datetime2-bahasai](https://github.com/777uliahshafar/dotfiles/tree/master/datetime2-bahasai).  The reason to use custom *datetime2-bahasai* because the original vocabulary is outdated like pebruari not februari.
 - Create a new TEXMF root: `mkdir ~/mytexmf`
