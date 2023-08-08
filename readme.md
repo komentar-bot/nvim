@@ -22,30 +22,7 @@ paths:
 
 PS. Check your nvim config `:checkhealth`
 
-# Latex
-1. Strawberry Perl [link](https://strawberryperl.com/) latex on nvim.
-2. Miktek, latex distribution [link](https://miktex.org/download). Package installation on the fly is much better. Check update on miktex console after installation, latex on nvim.
-3. SumatraPDF, enable all the options on options menu, latex on nvim.
-4. Add SumatraPDF parent directories of the executable to your `PATH environment variable` see [link](https://www.wikihow.com/Change-the-PATH-Environment-Variable-on-Windows), open `edit the system environment variables` → on Advanced System properties tab click environment variables → click path then click edit → then add this `C:\Users\ul\AppData\Local\SumatraPDF\`.
-5. Zotero, BetterBibtex (synchronous bibliography),
-- Change citation key in Tools → Preferences → BetterBibtex → Citation Keys → Citation key format:
-```
-[auth:lower][year]
-```
-- Change item format to `Better Bibtex` in Tools → Preferences → Exports → Item Format.
-- Omit abstract,file, language from export bib in Tools → Preferences → BetterBibtex → Open Better Bibtex Preferences → Exports → Fields → Fields to omit from export:
-```
-abstract,file,language
-```
-6. SplitShow (dual-head presentation of PDF slides).
-7. Add some custom packages such as [helpers4ht](https://github.com/michal-h21/helpers4ht) or [datetime2-bahasai](https://github.com/777uliahshafar/dotfiles/tree/master/datetime2-bahasai).  The reason to use custom *datetime2-bahasai* because the original vocabulary is outdated like pebruari not februari.
-- Create a new TEXMF root: `mkdir ~/mytexmf`
-- Create a sub directory: `mkdir -p ~/mytexmf/tex/latex/mystuff`
-- Copy your .cls and/or .sty files to `~/mytexmf/tex/latex/mystuff`, or copy folders to `~/mytexmf/tex/latex/`
-- eg. `~/mytexmf/tex/latex/helpers4ht/` or `~/mytexmf/tex/latex/datetime2-bahasai/datetime2-bahasai.ldf`
-- Register the TEXMF root directory ~/mytexmf in Miktex Console → Settings → Directories, see [link](https://miktex.org/howto/miktex-console).
-
-## Faq latex
+# Faq vimtex
 1. How to deal with Swap Warning
 - Recover the swap file(r)
 - If the content looks right, Save(:w) and Reopen(:e).
