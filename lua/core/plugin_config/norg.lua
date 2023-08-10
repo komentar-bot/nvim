@@ -21,8 +21,8 @@ require("neorg").setup {
           },
           headings = {
             ["1"] = {
-              prefix = "+@label",
-              title = "+@label",
+              prefix = "+@type.definition",
+              title = "+@type.definition",
             },
             ["2"] = {
               prefix = "+@attribute",
@@ -68,6 +68,12 @@ require("neorg").setup {
       },
     },
     ["core.integrations.nvim-cmp"] = {},
+    ["core.presenter"] = {
+      config = {
+        zen_mode = "zen-mode",
+      },
+    },
+
     ["core.keybinds"] = {
       config = {
         hook = function(keybinds)
