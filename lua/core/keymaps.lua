@@ -82,10 +82,6 @@ end)
 -- trouble
 map("n", "<leader>t", "<CMD>TroubleToggle<cr>")
 
--- neorg
-map("n", "<leader>ac", "<CMD>Neorg workspace aca<cr>")
-map("n", "<leader>ar", "<CMD>Neorg workspace arc<cr>")
-
 -- quickfix built-in
 vim.cmd [[
 function! s:ZoomToggle() abort
