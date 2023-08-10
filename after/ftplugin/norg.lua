@@ -7,3 +7,6 @@ require("cmp").setup.buffer {
     { name = "neorg" },
   },
 }
+
+vim.api.nvim_buf_set_keymap(0, "n", "[[", "<c-u>", { noremap = false })
+vim.api.nvim_buf_set_keymap(0, "n", "]]", "<c-d>", { noremap = false })
