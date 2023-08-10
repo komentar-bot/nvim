@@ -20,9 +20,9 @@ map("n", "j", "gj")
 map("n", "k", "gk")
 
 -- maps for  spellcheck
-map("n", "<leader>o", ":setlocal spell! spelllang=id<CR>")
+map("n", "<leader>o", "<CMD>setlocal spell! spelllang=id<CR>")
 
-map("n", "<F7>", ":setlocal spell! spelllang=en_us<CR>")
+map("n", "<F7>", "<CMD>setlocal spell! spelllang=en_us<CR>")
 
 -- maps split navigation
 map("n", "<c-h>", "<c-w>h")
@@ -31,11 +31,11 @@ map("n", "<c-k>", "<c-w>k")
 map("n", "<c-l>", "<c-w>l")
 
 -- map buffer
-map("n", "<c-b>", ":ls<CR>:b<Space>", opts)
-map("n", "<leader>h", ":bprevious<CR>", opts)
-map("n", "<leader>l", ":bnext<CR>", opts)
+map("n", "<c-b>", "<CMD>ls<CR>:b<Space>", opts)
+map("n", "<leader>h", "<CMD>bprevious<CR>", opts)
+map("n", "<leader>l", "<CMD>bnext<CR>", opts)
 
-map("n", "<leader><esc>", ":nohlsearch<CR>", opts)
+map("n", "<leader><esc>", "<CMD>nohlsearch<CR>", opts)
 
 --  navigate through popup pum menu
 --vim.api.nvim_set_keymap('i', '<Esc>', 'pumvisible() ? "\\<C-e>" : "\\<Esc>"', {expr = true, noremap = true})
@@ -80,11 +80,11 @@ map("i", "<c-j>", function()
 end)
 
 -- trouble
-map("n", "<leader>t", ":TroubleToggle<cr>")
+map("n", "<leader>t", "<CMD>TroubleToggle<cr>")
 
 -- neorg
-map("n", "<leader>ac", ":Neorg workspace aca<cr>")
-map("n", "<leader>ar", ":Neorg workspace arc<cr>")
+map("n", "<leader>ac", "<CMD>Neorg workspace aca<cr>")
+map("n", "<leader>ar", "<CMD>Neorg workspace arc<cr>")
 
 -- quickfix built-in
 vim.cmd [[
