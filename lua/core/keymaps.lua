@@ -51,7 +51,7 @@ vim.api.nvim_set_keymap("i", "<S-Tab>", 'pumvisible() ? "\\<C-p>" : "\\<Tab>"', 
 map("n", "<leader>e", require("nvim-tree.api").tree.toggle)
 
 -- zen mode
-map("n", "<leader>zz", require("zen-mode").toggle)
+map("n", "<leader>z", require("zen-mode").toggle)
 
 -- nvim-cmp
 map("n", "<leader>ua", "<cmd>lua vim.g.cmptoggle = not vim.g.cmptoggle<CR>", { desc = "toggle nvim-cmp" })
