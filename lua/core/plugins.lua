@@ -123,6 +123,7 @@ local plugins = {
     build = ":Neorg sync-parsers",
     dependencies = { { "nvim-lua/plenary.nvim" }, { "nvim-neorg/neorg-telescope" } },
   },
+  "777uliahshafar/vim-myhelp",
 }
 
 local opts = {}
