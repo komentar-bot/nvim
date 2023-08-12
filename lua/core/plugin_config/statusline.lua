@@ -18,6 +18,7 @@ local colors = {
   blue     = '#51afef',
   red      = '#ec5f67',
   dark4    = '#a89984',
+  choco    = '#bdae93',
 }
 
 local conditions = {
@@ -45,7 +46,7 @@ local config = {
       -- right section. Both are highlighted by c theme .  So we
       -- are just setting default looks o statusline
       normal = { c = { fg = colors.fg, bg = colors.bg } },
-      inactive = { c = { fg = colors.fg, bg = colors.bg } },
+      inactive = { c = { fg = colors.choco, bg = nil } },
     },
   },
   sections = {

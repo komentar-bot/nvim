@@ -101,5 +101,15 @@ opt.foldexpr = "nvim_treesitter#foldexpr()"
 opt.foldlevelstart = 99
 opt.foldnestmax = 3
 opt.foldminlines = 1
-opt.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
+opt.fillchars = {
+  vert = "▕", -- alternatives │
+  stlnc = "",
+  fold = " ",
+  eob = " ", -- suppress ~ at EndOfBuffer
+  diff = "╱", -- alternatives = ⣿ ░ ─
+  msgsep = "‾",
+  foldopen = "",
+  foldsep = "│",
+  foldclose = "",
+}
 opt.mouse = ""
