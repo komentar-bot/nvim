@@ -30,4 +30,6 @@ PS. Check your nvim config `:checkhealth`
 - Delete swap file (d) or manually from zsh.
 
 2. Lag in a long line and large file
-- Refresh fold with `<F6>`, from fastfold.
+- Refresh fold with `<F6>`, from fastfold vim plugin.
+
+
