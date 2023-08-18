@@ -16,7 +16,7 @@ telescope.setup {
 telescope.load_extension "ui-select"
 
 local bufopts = { noremap = true, silent = true }
-vim.keymap.set("n", "gt", function()
+vim.keymap.set("n", "gf", function()
   builtin.lsp_type_definitions()
 end, bufopts)
 vim.keymap.set("n", "gd", function()

@@ -119,7 +119,7 @@ local plugins = {
   },
   {
     "nvim-neorg/neorg",
-    tag = "v5.0.0",
+    -- tag = "v5.0.0",
     build = ":Neorg sync-parsers",
     dependencies = { { "nvim-lua/plenary.nvim" }, { "nvim-neorg/neorg-telescope" } },
   },
