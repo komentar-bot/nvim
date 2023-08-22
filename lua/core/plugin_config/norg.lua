@@ -6,8 +6,6 @@ require("neorg").setup {
     ["core.dirman"] = { -- Manages Neorg workspaces
       config = {
         workspaces = {
-          arc = "~/notes/architecture",
-          aca = "~/notes/academian",
           main = "~/notes/main",
         },
         default_workspace = "main",
