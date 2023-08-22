@@ -2,7 +2,20 @@ require("neorg").setup {
   load = {
     ["core.defaults"] = {}, -- Loads default behaviour
 
-    ["core.concealer"] = {},
+    ["core.concealer"] = {
+      config = {
+        icons = {
+          todo = {
+            undone = { icon = "." },
+            pending = { icon = "o" },
+            on_hold = { icon = " " },
+          },
+        },
+      },
+    },
+    ["core.qol.todo_items"] = {
+      config = {},
+    },
     ["core.dirman"] = { -- Manages Neorg workspaces
       config = {
         workspaces = {
@@ -32,6 +45,12 @@ require("neorg").setup {
             location = {
               url = "+@string",
             },
+          },
+          todo_items = {
+            pending = "+@punctuation.delimiter",
+            undone = "+@punctuation.delimiter",
+            done = "+@punctuation.delimiter",
+            on_hold = "+@punctuation.delimiter",
           },
         },
       },
@@ -77,7 +96,8 @@ require("neorg").setup {
         hook = function(keybinds)
           keybinds.remap_event("norg", "n", "<leader>s", "core.integrations.telescope.find_linkable")
           keybinds.remap_event("norg", "i", "<c-s>", "core.integrations.telescope.insert_link")
-          keybinds.remap_event("norg", "n", "<leader>c", "core.qol.todo_items.todo.task_cycle")
+          keybinds.remap_event("norg", "n", "<leader>cc", "core.qol.todo_items.todo.task_cycle")
+          keybinds.remap_event("norg", "n", "<leader>c", "core.qol.todo_items.todo.task_on_hold")
           keybinds.map("norg", "n", "<leader>q", "<cmd>Neorg toc qflist<CR>")
           keybinds.map("norg", "n", "<leader>v", "<cmd>Neorg presenter start<CR>")
         end,
