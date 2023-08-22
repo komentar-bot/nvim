@@ -7,7 +7,8 @@ require("neorg").setup {
         icons = {
           todo = {
             undone = { icon = "." },
-            pending = { icon = "o" },
+            done = { icon = "o" },
+            pending = { icon = "X" },
             on_hold = { icon = " " },
           },
         },
