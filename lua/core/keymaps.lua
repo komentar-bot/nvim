@@ -99,3 +99,6 @@ command! ZoomToggle call s:ZoomToggle()
 ]]
 
 map("n", "gz", "<CMD>ZoomToggle<cr>")
+
+-- Neorg
+map("n", "wi", "<CMD>Neorg workspace main<CR>")
