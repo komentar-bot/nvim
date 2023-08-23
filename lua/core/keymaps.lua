@@ -102,3 +102,7 @@ map("n", "gz", "<CMD>ZoomToggle<cr>")
 
 -- Neorg
 map("n", "wi", "<CMD>Neorg workspace main<CR>")
+
+-- vim fugitive
+map("n", "<leader>gf", "<CMD>G<CR>", opts)
+map("n", "<leader>gw", "<CMD>Gwrite<CR>", opts)
