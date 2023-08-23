@@ -26,3 +26,9 @@ autocmd("FileType", {
   pattern = { "qf" },
   command = [[nnoremap <buffer> <CR> <CR>:cclose<CR>]],
 })
+
+-- wrap preview telescope
+autocmd("User", {
+  pattern = { "TelescopePreviewerLoaded" },
+  command = "setlocal wrap",
+})
