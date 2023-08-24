@@ -8,6 +8,7 @@ end
 
 telescope.setup {
   defaults = {
+    wrap_results = true,
     prompt_prefix = " ",
     selection_caret = " ",
     path_display = { "smart" },
