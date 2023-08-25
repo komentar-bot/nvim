@@ -31,8 +31,8 @@ map("n", "<c-k>", "<c-w>k")
 map("n", "<c-l>", "<c-w>l")
 
 -- working dir
-map("n", "<leader>cd", "<CMD>lcd %:h<CR>")
-map("n", "cd", "<CMD>cd %:h<CR>")
+map("n", "<localleader>lcd", "<CMD>lcd %:h<CR>")
+map("n", "<localleader>cd", "<CMD>cd %:h<CR>")
 
 -- map buffer
 map("n", "<c-b>", "<CMD>ls<CR>:b<Space>", opts)
