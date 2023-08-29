@@ -39,6 +39,10 @@ require("neorg").setup {
               prefix = "+@attribute",
               title = "+@attribute",
             },
+            ["4"] = {
+              prefix = "+@function",
+              title = "+@function",
+            },
           },
           links = {
             file = "+@string",
