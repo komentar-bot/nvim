@@ -105,7 +105,7 @@ command! ZoomToggle call s:ZoomToggle()
 map("n", "gz", "<CMD>ZoomToggle<cr>")
 
 -- Neorg
-map("n", "wi", "<CMD>Neorg workspace main<CR>")
+map("n", "<leader>ww", "<CMD>Neorg workspace main<CR>")
 
 -- vim fugitive
 map("n", "<leader>gf", "<CMD>G<CR>", opts)
