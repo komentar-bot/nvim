@@ -8,7 +8,7 @@ require("zen-mode").setup {
       foldcolumn = "0",
       scrolloff = 999,
       list = false,
-      cursorline = false,
+      -- cursorline = false,
       conceallevel = 3,
     },
   },
