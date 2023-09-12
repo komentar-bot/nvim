@@ -12,12 +12,9 @@ require("gruvbox").setup {
   palette_overrides = {
     dark0 = "#232326",
     light5 = "#F8F8F2",
-    dark10 = "#2c2d31",
+    dark10 = "#282a2e",
     light7 = "#5c6370",
     light4 = "#5c6370",
-    bright_orange = "#dd9046",
-    bright_red = "#de5d68",
-    bright_yellow = "#d79921",
   },
 }
 
