@@ -19,6 +19,8 @@ paths:
   - C:\Users\<username>\AppData\Local\nvim\defaultSettings.yaml
 
 ```
+14. Nvim-R require installation of R for Windows and (Rtools)[https://cran.r-project.org/bin/windows/Rtools/]
+- Install R packaged required by `install.packages("pkgs")`.
 
 PS. Check your nvim config `:checkhealth`
 

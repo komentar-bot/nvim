@@ -124,10 +124,7 @@ local plugins = {
     build = ":Neorg sync-parsers",
     dependencies = { { "nvim-lua/plenary.nvim" }, { "nvim-neorg/neorg-telescope" } },
   },
-  {
-    "jalvesaq/Nvim-R",
-    branch = "stable",
-  },
+  "jalvesaq/Nvim-R",
   "777uliahshafar/vim-myhelp",
 }
 
