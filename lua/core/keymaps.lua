@@ -30,6 +30,10 @@ map("n", "<c-j>", "<c-w>j")
 map("n", "<c-k>", "<c-w>k")
 map("n", "<c-l>", "<c-w>l")
 
+-- split resize
+map("n", "+", "<cmd>res +5<CR>", opts)
+map("n", "_", "<cmd>res -5<CR>", opts)
+
 -- working dir
 map("n", "<localleader>lcd", "<CMD>lcd %:h<CR>")
 map("n", "<localleader>cd", "<CMD>cd %:h<CR>")
