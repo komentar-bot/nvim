@@ -22,6 +22,8 @@ paths:
 14. Nvim-R require installation of R for Windows and (Rtools)[https://cran.r-project.org/bin/windows/Rtools/]
 - Install R packaged required by `install.packages("pkgs")`.
 
+15. Luasnip use snipmate sourcecode for snippet.
+
 PS. Check your nvim config `:checkhealth`
 
 # Faq vimtex
