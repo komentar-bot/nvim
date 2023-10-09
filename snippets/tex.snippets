@@ -52,10 +52,20 @@ snippet mkt maketitle
 	\\maketitle
 
 # Tabular
-snippet tab tabular (or arbitrary) environment
-	\\begin{${1:tabular}}{${2:c}}
-		${0:${VISUAL}}
-	\\end{$1}
+snippet tab
+	\\begin{table}[htb]
+	  \\caption{${1:Legenda}}
+	  \\label{tb:${2:nome}}
+	  \\begin{tabular}{${2:ll}}
+	    \\hline
+	     ${3} &amp;  \\ \cline{2-3}
+	          &amp;  \\ \hline
+	          &amp;  \\
+	          &amp;  \\ \hline
+	  \\end{tabular}
+	\\end{table}
+	${4}
+
 snippet thm thm (or arbitrary) environment with optional argument
 	\\begin[${1:author}]{${2:thm}}
 		${0:${VISUAL}}
