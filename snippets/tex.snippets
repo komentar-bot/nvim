@@ -51,6 +51,15 @@ snippet begin \begin{} ... \end{} block
 snippet mkt maketitle
 	\\maketitle
 
+snippet bg background template
+	{\\usebackgroundtemplate{%
+	\\tikz\\node[inner sep=0] {\\includegraphics[height=\\paperheight,width=\\paperwidth]{figures/$1}};} ${2:frame}} $0
+
+snippet sbg picture
+	\\begin{textblock*}{2cm}(10cm,7cm) % {block width} (coords.12,8cm)
+	\\includegraphics[width=2cm]{figures/$1}
+	\\end{textblock*} $0
+
 # Tabular
 snippet tab
 	\\begin{table}[htb]
