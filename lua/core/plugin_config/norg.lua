@@ -4,11 +4,22 @@ require("neorg").setup {
 
     ["core.concealer"] = {
       config = {
+        -- icon_preset = "diamond",
         icons = {
           todo = {
             undone = { icon = " " },
             done = { icon = "o" },
             pending = { icon = "X" },
+          },
+          heading = {
+            icons = {
+              "❖",
+              "⟡",
+              "⋄",
+              "◆",
+              "◇",
+              "",
+            },
           },
         },
       },
