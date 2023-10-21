@@ -16,6 +16,7 @@ require("gruvbox").setup {
     dark10 = "#282a2e",
     light7 = "#5c6370",
     light4 = "#5c6370",
+    bright_blue = "#c0caf5",
   },
 }
 
