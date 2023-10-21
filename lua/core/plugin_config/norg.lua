@@ -56,6 +56,7 @@ require("neorg").setup {
             },
           },
           links = {
+            description = "+@text.underline",
             file = "+@string",
             location = {
               url = "+@string",
