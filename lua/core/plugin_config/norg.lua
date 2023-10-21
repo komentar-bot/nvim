@@ -81,13 +81,15 @@ require("neorg").setup {
           {
             "title",
             function()
-              return vim.fn.expand "%:t:r:S"
+              return vim.fn.expand "%:t:r"
+              -- return vim.fn.expand "%:t:r:S" -- with apostrophe
             end,
           },
           {
             "date",
             function()
-              return os.date '"%Y-%m-%d"'
+              return os.date "%Y-%m-%d"
+              -- return os.date '"%Y-%m-%d"' -- with apostrophe
             end,
           },
           { "tags", "" },
