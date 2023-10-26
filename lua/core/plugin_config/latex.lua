@@ -1,6 +1,9 @@
 local g = vim.g
 
 g.vimtex_fold_enabled = true
+g.vimtex_fold_types = {
+  comments = { enabled = true },
+}
 
 -- change defaul compiler engine
 g.vimtex_compiler_latexmk_engines = {
