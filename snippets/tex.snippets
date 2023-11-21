@@ -144,7 +144,7 @@ snippet item itemize environment
 snippet ite \item
 	\\item ${1:${VISUAL}}
 
-snippet ita \item<1->
+snippet ovi \item<1->
 	\\item<${1:1}->${0}
 
 # Description
@@ -295,9 +295,9 @@ snippet ft \footnote
 	\\footnote{${1:${VISUAL:text}}}${0}
 snippet note \notec
 	\\notec{${1:text}}${0}
-snippet sli \onslide
+snippet ovb \onslide
 	\\onslide<${1:1}->{${2}}${0}
-snippet only \only
+snippet ova \only
 	\\only<${1:1}->{${2}}${0}
 snippet fig figure environment (includegraphics)
 	\\begin{figure}
@@ -489,3 +489,8 @@ snippet clr xcolor
 	\\color{${1:olivegreen}} ${0}
 snippet co text xcolor
 	\\textcolor{${1:blue}}{$2} ${0}
+
+snippet set setbeamercolor
+	\\setbeamercolor{${1:frametitle}}{bg=${2:yellow!20}}
+
+
