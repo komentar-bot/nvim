@@ -67,6 +67,10 @@ snippet tmplt2 "Beamer Template"
 
 #img rowcolumn
 
+snippet img "Row Image"
+	\\includegraphics[width=.8\paperwidth]{${1:placeholder}}
+	${0}
+
 snippet imgrow2 "Row Image"
 	\\begin{textblock*}{64mm}(64mm,12mm)
 		\\includegraphics[width=64mm,height=39mm]{${1:placeholder}}
@@ -192,9 +196,9 @@ snippet begin \begin{} ... \end{} block
 snippet mkt maketitle
 	\\maketitle
 
-snippet sbg picture
-	\\begin{textblock*}{2cm}(10cm,7cm) % {block width} (coords.12,8cm)
-	\\includegraphics[width=2cm]{figures/$1}
+snippet pos texpos
+	\\begin{textblock*}{20mm}(0mm,0mm) % {block width} (coords.12,8cm)
+	${1}
 	\\end{textblock*} $0
 
 # Tabular
