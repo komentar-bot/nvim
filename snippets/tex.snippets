@@ -27,6 +27,44 @@ snippet tmplt "Template"
 		    $0
 	\\end{document}
 
+snippet tmplt2 "Beamer Template"
+	\\documentclass{beamer}
+	\\input{preamble}
+	\\setbeameroption{hide notes} % Only slides
+	%\\setbeameroption{show only notes} % Only notes
+	%\\setbeameroption{show notes on second screen=right} % Both
+
+	% META
+	\\title{\\#Lorem Ipsum}
+	\\author{Muhammad Uliah Shafar}
+	\\institute[Lehrstuhl]{
+		Name des Lehrstuhls \\
+		Name des Instituts/Fachbereichs \\
+		Name der Universität, Ort
+	}
+	\\mode<presentation>{\\keywords{Schlüsselwörter durch Komma getrennt}}
+	\\date[09.04.2018]{Datum der Präsentation, \\zB 9. April 2018}
+
+	$1
+	\\begin{document}
+
+	\\subfile{./subfiles/preface.tex}
+
+	$0
+	\\begin{frame}[c,mybg=guide,mytitle=center]
+		\\frametitle{title}
+		\\framesubtitle{subtitle}
+
+	\\end{frame}
+
+	\\begin{frame}<beamer>{}
+		\\bibliographystyle{apalike}
+		{\\tiny
+			\\bibliography{biblio.bib}
+		}
+	\\end{frame}
+	\\end{document}
+
 #newcommand
 snippet nc \newcommand
 	\\newcommand{\\${1:cmd}}[${2:opt}]{${3:realcmd}} ${0}
