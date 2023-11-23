@@ -51,7 +51,7 @@ snippet tmplt2 "Beamer Template"
 	\\subfile{./subfiles/preface.tex}
 
 	$0
-	\\begin{frame}[c,mybg=guide,mytitle=center]
+	\\begin{frame}[c,mybg=bg_pencil,mytitle=standard,mycolor=digiPH_ocean,light]
 		\\frametitle{title}
 		\\framesubtitle{subtitle}
 
@@ -479,6 +479,18 @@ snippet tikz figure environment (tikzpicture)
 	\\label{fig:${4}}
 	\\end{figure}
 	${0}
+
+snippet pointer arrow
+	\\begin{tikzpicture}
+	\\node (image) at (current page.center){\\includegraphics[width=${1:6cm}]{${2:placeholder}}};
+	\\begin{scope}[shift={(image.south west)},x={(image.south east)},y={(image.north west)}]
+	\\node[fill=gray,font=\\normalsize,inner sep=4pt,align=center](Tom) at (0.9,0.74) {${3:Tom}};
+	\\node[fill=gray,font=\\normalsize,inner sep=4pt,align=center] (Jerry) at (1.1,0.23){${4:Jerry}};
+	\\draw[thick,red,-stealth] (Tom) -- (0.49,0.42);
+	\\draw[thick,red,-stealth] (Jerry) -- (0.66,0.23);
+	\\end{scope}
+	\\end{tikzpicture}
+
 snippet subfig subfigure environment
 	\\begin{subfigure}[${1}]{${2:\\textwidth}}
 	\\begin{center}
