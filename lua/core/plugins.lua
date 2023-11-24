@@ -11,14 +11,6 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-local cb = function()
-  if vim.o.background == "light" then
-    return "#d5c4a1"
-  else
-    return "#32302f"
-  end
-end
-
 local plugins = {
   -- Telescope --
   {
@@ -129,32 +121,6 @@ local plugins = {
   {
     "shellRaining/hlchunk.nvim",
     event = { "UIEnter" },
-    config = function()
-      require("hlchunk").setup {
-        indent = {
-          chars = { "▏" },
-          style = {
-            { fg = cb },
-          },
-          exclude_filetype = {
-            trouble = true,
-            lazy = true,
-          },
-        },
-        line_num = {
-          enable = false,
-        },
-        blank = {
-          enable = true,
-          style = {
-            { fg = cb },
-          },
-        },
-        chunk = {
-          enable = false,
-        },
-      }
-    end,
   },
   {
     "nvim-neorg/neorg",
