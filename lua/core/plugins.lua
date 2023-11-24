@@ -119,6 +119,31 @@ local plugins = {
     end,
   },
   {
+    "shellRaining/hlchunk.nvim",
+    event = { "UIEnter" },
+    config = function()
+      require("hlchunk").setup {
+        indent = {
+          chars = { "▏" },
+
+          style = {
+            "#806d9c",
+          },
+          exclude_filetype = {
+            trouble = true,
+            lazy = true,
+          },
+        },
+        line_num = {
+          enable = false,
+        },
+        blank = {
+          enable = true,
+        },
+      }
+    end,
+  },
+  {
     "nvim-neorg/neorg",
     -- tag = "v5.0.0",
     build = ":Neorg sync-parsers",
