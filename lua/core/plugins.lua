@@ -140,6 +140,9 @@ local plugins = {
         blank = {
           enable = true,
         },
+        chunk = {
+          enable = false,
+        },
       }
     end,
   },
