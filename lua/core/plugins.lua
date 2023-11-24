@@ -11,6 +11,14 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+local cb = function()
+  if vim.o.background == "light" then
+    return "#d5c4a1"
+  else
+    return "#32302f"
+  end
+end
+
 local plugins = {
   -- Telescope --
   {
@@ -125,9 +133,8 @@ local plugins = {
       require("hlchunk").setup {
         indent = {
           chars = { "▏" },
-
           style = {
-            "#806d9c",
+            { fg = cb },
           },
           exclude_filetype = {
             trouble = true,
@@ -139,6 +146,9 @@ local plugins = {
         },
         blank = {
           enable = true,
+          style = {
+            { fg = cb },
+          },
         },
         chunk = {
           enable = false,
