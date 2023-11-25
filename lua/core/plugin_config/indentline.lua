@@ -1,8 +1,8 @@
 local cb = function()
-  if vim.o.background == "light" then
-    return "#d5c4a1"
+  if vim.o.background == "dark" then
+    return "#5c6370"
   else
-    return "#32302f"
+    return "#a89984"
   end
 end
 
