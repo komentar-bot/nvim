@@ -8,16 +8,6 @@ create_cmd("ToggleBackground", function()
   end
 end, {})
 
-require("gruvbox").setup {
-  palette_overrides = {
-    dark0 = "#232326",
-    light0 = "#fbf1c7",
-    light5 = "#F8F8F2",
-    dark10 = "#282a2e",
-    light7 = "#5c6370",
-    light4 = "#5c6370",
-    bright_blue = "#c0caf5",
-  },
-}
+require("gruvbox").setup {}
 
 vim.cmd [[colorscheme gruvbox]]
