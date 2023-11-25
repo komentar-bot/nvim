@@ -24,7 +24,7 @@ require("hlchunk").setup {
   },
 
   blank = {
-    enable = true,
+    enable = false,
     style = {
       { fg = cb },
     },
