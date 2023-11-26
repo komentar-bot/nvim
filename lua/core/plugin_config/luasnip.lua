@@ -7,7 +7,7 @@ local ls = require "luasnip"
 require("luasnip.loaders.from_lua").load { paths = "~/Appdata/Local/nvim/snippets/" }
 require("luasnip.loaders.from_vscode").lazy_load()
 require("luasnip.loaders.from_snipmate").lazy_load()
-require("luasnip").config.setup { store_selection_keys = "<A-p>" }
+require("luasnip").config.setup { store_selection_keys = "<Tab>" }
 
 vim.cmd [[command! LuaSnipEdit :lua require("luasnip.loaders.from_lua").edit_snippet_files()]] --}}}
 
