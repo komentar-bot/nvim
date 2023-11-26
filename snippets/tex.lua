@@ -1,25 +1,26 @@
 local ls = require "luasnip"
 -- some shorthands...
-local snip = ls.snippet
-local node = ls.snippet_node
-local text = ls.text_node
-local insert = ls.insert_node
-local func = ls.function_node
+local s = ls.snippet
+local t = ls.text_node
+local i = ls.insert_node
+local sn = ls.snippet_node
+local f = ls.function_node
 local choice = ls.choice_node
 local dynamicn = ls.dynamic_node
 
-local date = function()
-  return { os.date "%Y-%m-%d" }
-end
+local fmt = require("luasnip.extras.fmt").fmt
 
-ls.add_snippets(nil, {
-  all = {
-    snip({
-      trig = "yee",
-      namr = "Date",
-      dscr = "Date in the form of YYYY-MM-DD",
-    }, {
-      func(date, {}),
-    }),
-  },
-})
+ls.add_snippets("tex", {
+  s(
+    "boxp",
+    fmt("\\boxes{{{}}}{{{}}}{{{}}}", {
+      i(1, "digiPH_gray"),
+      i(2, "digiPH_writer"),
+      f(function(_, snip)
+        -- TM_SELECTED_TEXT is a table to account for multiline-selections.
+        -- In this case only the first line is inserted.
+        return snip.env.TM_SELECTED_TEXT or {}
+      end, {}),
+    })
+  ),
+}) -- end all
