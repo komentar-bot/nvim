@@ -23,4 +23,17 @@ ls.add_snippets("tex", {
       end, {}),
     })
   ),
+
+  s(
+    "posp",
+    fmt("\\begin{{textblock*}}{{{}}}({}){}\\end{{textblock*}}", {
+      i(1, "50mm"),
+      i(2, "95mm,130mm"),
+      f(function(_, snip)
+        -- TM_SELECTED_TEXT is a table to account for multiline-selections.
+        -- In this case only the first line is inserted.
+        return snip.env.TM_SELECTED_TEXT or {}
+      end, {}),
+    })
+  ),
 }) -- end all
