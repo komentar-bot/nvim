@@ -70,14 +70,21 @@ ls.add_snippets("tex", {
   ), --end of snip
   s(
     "framep",
-    fmt("\\begin{{frame}}[{},mybg={},mytitle={},mycolor={},{}]\\frametitle{{{}}}{}\\end{{frame}}", {
-      i(1, "c"),
-      c(2, { t "placeholder", t "" }),
-      c(3, { t "standard", t "imageplus", t "center" }),
-      c(4, { t "digiPH_gray", t "digiPH_leaf", t "digiPH_ocean" }),
-      c(5, { t "light", t "dark" }),
-      i(6, "notitle"),
-      i(7, "content"),
-    })
+    fmt(
+      [[
+    \begin{{frame}}[{},mybg={},mytitle={},mycolor={},{}]
+    \frametitle{{{}}}
+    {}
+    \end{{frame}}]],
+      {
+        i(1, "c"),
+        c(2, { t "placeholder", t "" }),
+        c(3, { t "standard", t "imageplus", t "center" }),
+        c(4, { t "digiPH_gray", t "digiPH_leaf", t "digiPH_ocean" }),
+        c(5, { t "light", t "dark" }),
+        i(6, "notitle"),
+        i(7, "content"),
+      }
+    )
   ), --end of snip
 }) -- end all
