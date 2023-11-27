@@ -36,4 +36,36 @@ ls.add_snippets("tex", {
       end, {}),
     })
   ),
+  s(
+    "ovop",
+    fmt("\\only<{}>{{{}}}", {
+      i(1, "1-"),
+      f(function(_, snip)
+        -- TM_SELECTED_TEXT is a table to account for multiline-selections.
+        -- In this case only the first line is inserted.
+        return snip.env.TM_SELECTED_TEXT or {}
+      end, {}),
+    })
+  ),
+  s(
+    "ovsp",
+    fmt("\\onslide<{}>{{{}}}", {
+      i(1, "1-"),
+      f(function(_, snip)
+        -- TM_SELECTED_TEXT is a table to account for multiline-selections.
+        -- In this case only the first line is inserted.
+        return snip.env.TM_SELECTED_TEXT or {}
+      end, {}),
+    })
+  ),
+  s(
+    "notep",
+    fmt("\\notes{{{}}}", {
+      f(function(_, snip)
+        -- TM_SELECTED_TEXT is a table to account for multiline-selections.
+        -- In this case only the first line is inserted.
+        return snip.env.TM_SELECTED_TEXT or {}
+      end, {}),
+    })
+  ),
 }) -- end all
