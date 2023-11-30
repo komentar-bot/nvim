@@ -72,15 +72,15 @@ ls.add_snippets("tex", {
     "framep",
     fmt(
       [[
-    \begin{{frame}}[{},mybg={},mytitle={},mycolor={},{}]
+    \begin{{frame}}[{},mybg={},mytitle={},{}{}]
     \frametitle{{{}}}
     {}
     \end{{frame}}]],
       {
-        i(1, "c"),
+        i(1, "t"),
         c(2, { t "placeholder", t "" }),
         c(3, { t "standard", t "imageplus", t "center" }),
-        c(4, { t "digiPH_gray", t "digiPH_leaf", t "digiPH_ocean" }),
+        c(4, { t "mycolor=digiPH_gray,", t "mycolor=digiPH_leaf,", t "mycolor=digiPH_ocean,", t "" }),
         c(5, { t "light", t "dark" }),
         i(6, "notitle"),
         i(7, "content"),
