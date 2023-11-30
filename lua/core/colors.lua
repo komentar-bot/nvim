@@ -8,6 +8,10 @@ create_cmd("ToggleBackground", function()
   end
 end, {})
 
-require("gruvbox").setup {}
+require("gruvbox").setup {
+  palette_overrides = {
+    faded_green = "#79740e",
+  },
+}
 
 vim.cmd [[colorscheme gruvbox]]
