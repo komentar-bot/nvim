@@ -1,5 +1,6 @@
 local g = vim.g
 
+-- reduce lag on matching paren
 -- g.vimtex_matchparen_enabled = false
 g.matchup_override_vimtex = true
 g.matchup_matchparen_deferred = true
