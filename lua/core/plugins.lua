@@ -108,6 +108,7 @@ local plugins = {
 
   -- Writing
   { "lervag/vimtex", lazy = false },
+  { "andymass/vim-matchup", lazy = false },
   {
     "andrewferrier/wrapping.nvim",
     config = function()

@@ -1,5 +1,10 @@
 local g = vim.g
 
+-- g.vimtex_matchparen_enabled = false
+g.matchup_override_vimtex = true
+g.matchup_matchparen_deferred = true
+
+-- folding
 g.vimtex_fold_enabled = true
 g.vimtex_fold_types = {
   comments = { enabled = true },
