@@ -16,8 +16,8 @@ map("n", "<leader>sl", "<CMD>SessionLoad<CR>")
 map("n", "<f5>", "<CMD>ToggleBackground<CR>")
 
 -- maps for go down and up
-map("n", "j", "gj")
-map("n", "k", "gk")
+map("n", "j", "gj", { noremap = true })
+map("n", "k", "gk", { noremap = true })
 
 -- maps for  spellcheck
 map("n", "<leader>o", "<CMD>setlocal spell! spelllang=id<CR>")
