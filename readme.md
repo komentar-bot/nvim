@@ -8,7 +8,7 @@
 4. Ripgrep `scoop install ripgrep`, required for nvim-tree.
 5. fd `scoop install fd` required for nvim-tree.
 6. zig `scoop install zig` required for nvim-treesitter. `:TSInstallInfo` available language, `:TSUpdate` update parsers unconditionally.
-11. nvim-neorg, create folder for neorg workspace manually if it doesn't provide automatically.
+11. nvim-neorg, create/move folder for neorg workspace manually if it doesn't provide automatically. `~/notes/main`
 13. latexindent.pl configuration : create indentconfig.yaml in home directory `C:\Users\<username>\` which contains the path to your `defaultSettings.yaml` in nvim directory.
 
 Windows users may find that they have to end .yaml files with a blank line.
