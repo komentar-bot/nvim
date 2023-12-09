@@ -69,14 +69,13 @@ snippet tmpltbsub "Sub Beamer Template"
 	%! TEX root = part1.tex
 	% specify the main TeX file to compile only this subfile
 	% :h vimtex-tex-root
-	\\documentclass[main.tex]{beamer}
-
+	\\documentclass[main.tex]{subfiles}
 	% \setbeameroption{hide notes} % Only slides
-	%\setbeameroption{show only notes} % Only notes
-	\setbeameroption{show notes on second screen=right} % Both
-
+	% \setbeameroption{show only notes} % Only notes
+	\\setbeameroption{show notes on second screen=right} % Both
 	$1
 	\\begin{document}
+
 	$0
 	\\end{document}
 
