@@ -87,4 +87,11 @@ ls.add_snippets("tex", {
       }
     )
   ), --end of snip
+  s(
+    "img",
+    fmt("\\includegraphics[{},width=40mm]{{{}}}", {
+      c(1, { t "final", t "draft" }),
+      i(2, "placeholder"),
+    })
+  ), --end of snip
 }) -- end all
