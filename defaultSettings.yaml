@@ -10,6 +10,7 @@ lookForAlignDelims:
    tabular:
       delims: 1
       alignDoubleBackSlash: 0
+      justification: left
       spacesBeforeAmpersand: 2
       spacesAfterAmpersand: 2
       spacesBeforeDoubleBackSlash: 2
