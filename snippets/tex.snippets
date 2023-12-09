@@ -27,7 +27,7 @@ snippet tmplt "Template"
 		    $0
 	\\end{document}
 
-snippet tmplt2 "Beamer Template"
+snippet tmpltb "Beamer Template"
 	\\documentclass{beamer}
 	\\input{preamble}
 	\\setbeameroption{hide notes} % Only slides
@@ -63,6 +63,17 @@ snippet tmplt2 "Beamer Template"
 			\\bibliography{biblio.bib}
 		}
 	\\end{frame}
+	\\end{document}
+
+snippet tmpltbsub "Sub Beamer Template"
+	%! TEX root = part1.tex
+	% specify the main TeX file to compile only this subfile
+	% :h vimtex-tex-root
+	\\documentclass{beamer}
+
+	$1
+	\\begin{document}
+	$0
 	\\end{document}
 
 #img rowcolumn
