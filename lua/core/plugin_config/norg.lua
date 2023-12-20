@@ -117,8 +117,9 @@ require("neorg").setup {
           keybinds.remap_event("norg", "n", "<leader>s", "core.integrations.telescope.find_linkable")
           keybinds.remap_event("norg", "i", "<c-s>", "core.integrations.telescope.insert_link")
           keybinds.remap_event("norg", "n", "<leader>c", "core.qol.todo_items.todo.task_cycle")
-          keybinds.map("norg", "n", "<leader>wq", "<cmd>Neorg toc qflist<CR>")
-          keybinds.map("norg", "n", "<leader>ws", "<cmd>Neorg presenter start<CR>")
+          keybinds.map("norg", "n", "<leader>nl", "<cmd>Neorg toc qflist<CR>")
+          keybinds.map("norg", "n", "<leader>np", "<cmd>Neorg presenter start<CR>")
+          keybinds.map("norg", "n", "<leader>ns", "<cmd>Neorg generate-workspace-summary<CR>")
         end,
       },
     },
