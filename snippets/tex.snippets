@@ -67,9 +67,10 @@ snippet tmpltb "Beamer Template"
 
 snippet tmpltbsub "Sub Beamer Template"
 	%! TEX root = part1.tex
-	% specify the main TeX file to compile only this subfile
+	% the main TeX file which is intended to compile, :VimtexReload after adjustment
 	% :h vimtex-tex-root
 	\\documentclass[main.tex]{subfiles}
+	\\includeonlyframes{current}
 	% \setbeameroption{hide notes} % Only slides
 	% \setbeameroption{show only notes} % Only notes
 	\\setbeameroption{show notes on second screen=right} % Both
@@ -82,7 +83,7 @@ snippet tmpltbsub "Sub Beamer Template"
 #img rowcolumn
 
 snippet imgrow2 "Row Image"
-	\\begin{textblock*}{62mm}(64mm,12mm)%(95mm,130mm)
+	\\begin{textblock*}{62mm}(64mm,12mm)%(130mm,95mm)
 		\\includegraphics[width=62mm,height=39mm]{${1:placeholder}}
 	\\end{textblock*}
 	\\begin{textblock*}{62mm}(64mm,56mm)
@@ -91,7 +92,7 @@ snippet imgrow2 "Row Image"
 	${0}
 
 snippet imglrow2 "Row Image"
-	\\begin{textblock*}{64mm}(0mm,12mm)%(95mm,130mm)
+	\\begin{textblock*}{64mm}(0mm,12mm)%(130mm,95mm)
 		\\includegraphics[width=64mm,height=39mm]{${1:placeholder}}
 	\\end{textblock*}
 	\\begin{textblock*}{64mm}(0mm,56mm)
@@ -100,7 +101,7 @@ snippet imglrow2 "Row Image"
 	${0}
 
 snippet imgrow3 "Row Image"
-	\\begin{textblock*}{44mm}(84mm,10mm)%(95mm,130mm)
+	\\begin{textblock*}{44mm}(84mm,10mm)%(130mm,95mm)
 		\\includegraphics[width=44mm,height=28mm]{${1:placeholder}}
 	\\end{textblock*}
 	\\begin{textblock*}{44mm}(84mm,39mm)
@@ -112,7 +113,7 @@ snippet imgrow3 "Row Image"
 	${0}
 
 snippet imglrow3 "Row Image"
-	\\begin{textblock*}{44mm}(0mm,10mm)%(95mm,130mm)
+	\\begin{textblock*}{44mm}(0mm,10mm)%(130mm,95mm)
 		\\includegraphics[width=44mm,height=28mm]{${1:placeholder}}
 	\\end{textblock*}
 	\\begin{textblock*}{44mm}(0mm,39mm)
@@ -124,19 +125,19 @@ snippet imglrow3 "Row Image"
 	${0}
 
 snippet imgright "Row Image"
-	\\begin{textblock*}{60mm}(68mm,20mm)%(95mm,130mm)
+	\\begin{textblock*}{60mm}(68mm,20mm)%(130mm,95mm)
 		\\includegraphics[width=60mm,height=76mm]{${1:placeholder}}
 	\\end{textblock*}
 	${0}
 
 snippet imgleft "Row Image"
-	\\begin{textblock*}{60mm}(0mm,20mm)%(95mm,130mm)
+	\\begin{textblock*}{60mm}(0mm,20mm)%(130mm,95mm)
 		\\includegraphics[width=60mm,height=76mm]{${1:placeholder}}
 	\\end{textblock*}
 	${0}
 
 snippet imgcolumn2 "Row Image"
-	\\begin{textblock*}{63mm}(0mm,54mm)%(95mm,130mm)
+	\\begin{textblock*}{63mm}(0mm,54mm)%(130mm,95mm)
 		\\includegraphics[width=64mm]{${1:placeholder}}
 	\\end{textblock*}
 	\\begin{textblock*}{62mm}(65mm,54mm)
@@ -145,7 +146,7 @@ snippet imgcolumn2 "Row Image"
 	${0}
 
 snippet imgcolumn3 "Row Image"
-	\\begin{textblock*}{42mm}(0mm,66mm)%(95mm,130mm)
+	\\begin{textblock*}{42mm}(0mm,66mm)%(130mm,95mm)
 		\\includegraphics[width=42mm]{${1:placeholder}}
 	\\end{textblock*}
 	\\begin{textblock*}{42mm}(43mm,66mm)
@@ -157,7 +158,7 @@ snippet imgcolumn3 "Row Image"
 	${0}
 
 snippet imgrowcolumn2 "Row Image"
-	\\begin{textblock*}{63mm}(0mm,54mm)%(95mm,130mm)
+	\\begin{textblock*}{63mm}(0mm,54mm)%(130mm,95mm)
 		\\includegraphics[width=62mm]{${1:placeholder}}
 	\\end{textblock*}
 	\\begin{textblock*}{62mm}(65mm,54mm)
@@ -169,7 +170,7 @@ snippet imgrowcolumn2 "Row Image"
 	${0}
 
 snippet imgrowcolumn3 "Row Image"
-	\\begin{textblock*}{42mm}(0mm,66mm)%(95mm,130mm)
+	\\begin{textblock*}{42mm}(0mm,66mm)%(130mm,95mm)
 		\\includegraphics[width=42mm]{${1:placeholder}}
 	\\end{textblock*}
 	\\begin{textblock*}{42mm}(43mm,66mm)
@@ -456,6 +457,12 @@ snippet ovs \onslide
 	\\onslide<${1:1}->{${2}}${0}
 snippet ovo \only
 	\\only<${1:1}->{${2}}${0}
+
+snippet imgbg background block
+	\\begin{bgblock}{${1:130}mm}{${2:95}mm}
+		\\includegraphics[width=62mm]{${3}}
+	\\end{bgblock}
+
 snippet fig figure environment (includegraphics)
 	\\begin{figure}
 	\\begin{center}
